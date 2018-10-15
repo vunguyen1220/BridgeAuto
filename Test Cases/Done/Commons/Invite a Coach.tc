@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Invite a Coach</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e090d1d8-e92d-44c1-a8a3-bbf2737a84f8</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c3493937-92a8-4543-93d3-2fb3be3461d9</id>
+      <masked>false</masked>
+      <name>Coach</name>
+   </variable>
+</TestCaseEntity>

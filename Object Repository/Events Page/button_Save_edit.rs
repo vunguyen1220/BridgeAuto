@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Save_edit</name>
+   <tag></tag>
+   <elementGuidId>7de1d944-1a89-4d66-84ba-afc03f55fc84</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@class=&quot;competition-item ng-scope competition-highlight&quot;]//div[@class=&quot;btns&quot;]/button[@ng-click = 'submitEdit()']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>is-saving</name>
+      <type>Main</type>
+      <value>isSaving</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-click</name>
+      <type>Main</type>
+      <value>submitEdit()</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-disabled</name>
+      <type>Main</type>
+      <value>!competition.name || !competition-edit.startDateDisplay || !competition.endDateDisplay || competition.endDateDisplay &lt; competition.startDateDisplay</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>md-button md-default-theme loading-button ng-isolate-scope</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-disabled</name>
+      <type>Main</type>
+      <value>false</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;team-competitions-full&quot;)/md-content[@class=&quot;ng-scope md-default-theme&quot;]/div[@class=&quot;competition-item ng-scope competition-highlight&quot;]/competition-card-drt[@class=&quot;ng-pristine ng-valid ng-isolate-scope ng-touched&quot;]/div[@class=&quot;single-competition&quot;]/div[@class=&quot;btns&quot;]/button[@class=&quot;md-button md-default-theme loading-button ng-isolate-scope&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

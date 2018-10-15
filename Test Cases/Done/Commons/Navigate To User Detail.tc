@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Navigate To User Detail</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9d5ab23d-bb7e-48c9-8e06-52efc4d6997e</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5044f42a-63de-4997-b89c-9f2f6e6f28a6</id>
+      <masked>false</masked>
+      <name>var_userName</name>
+   </variable>
+</TestCaseEntity>

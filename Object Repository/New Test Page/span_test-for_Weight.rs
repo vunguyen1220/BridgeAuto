@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_test-for_Weight</name>
+   <tag></tag>
+   <elementGuidId>10319d53-76bd-4957-9964-077d41d693ec</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@ng-click=&quot;testFor(item)&quot;]/span[text()=&quot;Weight&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>flex</name>
+      <type>Main</type>
+      <value>1</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ng-binding ng-scope</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Weight</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main-panel&quot;)/ui-view[@class=&quot;ng-scope&quot;]/new-test[@class=&quot;ng-scope ng-isolate-scope&quot;]/div[@class=&quot;new-test-panel new-test&quot;]/md-content[@class=&quot;md-default-theme&quot;]/div[@class=&quot;test-content&quot;]/div[1]/span[@class=&quot;newtest-row&quot;]/div[3]/div[1]/button[@class=&quot;text-center md-button ng-scope md-default-theme selected&quot;]/span[@class=&quot;ng-binding ng-scope&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

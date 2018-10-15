@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Unassigned Programs Test Suite</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>8dbc2d53-0cb2-4bb6-99ba-c282b17355c1</testSuiteGuid>
+   <testCaseLink>
+      <guid>e052652f-5ac1-4273-a732-3c13fa41ec69</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Doing/Unassigned Programs/Edit Program</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>78671f44-e8fb-4de7-8338-1582a69342d2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6677a183-0df2-4fd1-8207-9352ce9ef166</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>69f1e36d-c052-4b2b-be4d-2e5f3ec8926c</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>39852b38-2c4e-493b-a1a0-433103e2bd63</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Doing/Unassigned Programs/Edit Phase</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7d28da82-98a0-4d50-8d0c-cf59a4e2e6c0</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8712913a-7d45-4158-af5c-e2af13b3a8eb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9abd6bdf-7a63-4830-bd68-de2b7919f98d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7cef740f-1a5a-47e5-87db-5e7a526369cb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>66fb3643-2bbe-424e-94ad-32f2c580b119</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4491edf5-ffa1-4e48-a737-e6151c1c8d68</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Doing/Unassigned Programs/Edit Workouts - Week View</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>129e57cb-d5ed-40ac-a695-3122b3b86ad9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Doing/Unassigned Programs/Edit Workouts - Day View</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>859d5c12-b3b4-4c6e-909b-376b7a31900e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>da9111d7-be01-4844-95ab-ff0f0228a802</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2aed0b67-934f-4f58-9d35-fcc897569f13</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Doing/Unassigned Programs/Edit Blocks - Day View</testCaseId>
+   </testCaseLink>
+</TestSuiteEntity>

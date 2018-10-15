@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Edit Program</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2c0bdcdd-81b2-4b92-a326-5f6a066a9693</testCaseGuid>
+   <variable>
+      <defaultValue>'bridgetest1102+coach1@gmail.com'</defaultValue>
+      <description></description>
+      <id>78671f44-e8fb-4de7-8338-1582a69342d2</id>
+      <masked>false</masked>
+      <name>Coach</name>
+   </variable>
+   <variable>
+      <defaultValue>'Test Program 01'</defaultValue>
+      <description></description>
+      <id>6677a183-0df2-4fd1-8207-9352ce9ef166</id>
+      <masked>false</masked>
+      <name>Program_Name</name>
+   </variable>
+   <variable>
+      <defaultValue>'Test Description 01'</defaultValue>
+      <description></description>
+      <id>69f1e36d-c052-4b2b-be4d-2e5f3ec8926c</id>
+      <masked>false</masked>
+      <name>Program_Description</name>
+   </variable>
+</TestCaseEntity>

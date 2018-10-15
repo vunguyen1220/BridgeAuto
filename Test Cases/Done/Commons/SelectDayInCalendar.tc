@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SelectDayInCalendar</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>275f8903-1a66-4e1c-8e1c-6ef5a363b52d</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>740fc809-04cb-4591-9339-01d5f1e781eb</id>
+      <masked>false</masked>
+      <name>startDate</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>929b9837-1f43-45d4-891b-bbc8530a98aa</id>
+      <masked>false</masked>
+      <name>expectYear</name>
+   </variable>
+</TestCaseEntity>

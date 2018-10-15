@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Filter Programs</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5dc315fb-058d-459d-9356-f8d5ed4f5389</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b916f7ee-767e-4786-a4fe-cc961f9bba3b</id>
+      <masked>false</masked>
+      <name>var_byCreator</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a34fd32c-ae82-4ae2-ae58-09b584e723d6</id>
+      <masked>false</masked>
+      <name>var_byTeam</name>
+   </variable>
+   <variable>
+      <defaultValue>[]</defaultValue>
+      <description></description>
+      <id>322580b3-5cb6-420e-8e85-3b2de773ca71</id>
+      <masked>false</masked>
+      <name>var_byType</name>
+   </variable>
+</TestCaseEntity>

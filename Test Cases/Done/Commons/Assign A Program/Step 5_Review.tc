@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Step 5_Review</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b7f7115a-73c8-4747-907b-e728e46d2134</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>be5738e3-365a-40d5-9011-6ccbfb7aa484</id>
+      <masked>false</masked>
+      <name>var_programName</name>
+   </variable>
+   <variable>
+      <defaultValue>[]</defaultValue>
+      <description></description>
+      <id>9e77b1ba-663f-4a6a-b6c7-5fc7614e5347</id>
+      <masked>false</masked>
+      <name>var_removeUserList</name>
+   </variable>
+</TestCaseEntity>

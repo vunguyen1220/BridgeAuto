@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Select Organization</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9456bb99-418c-48ce-a5bd-f075782996ab</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>64be63fb-f0c6-4bf5-8b50-e2dcfe31daef</id>
+      <masked>false</masked>
+      <name>var_orgNumber</name>
+   </variable>
+</TestCaseEntity>

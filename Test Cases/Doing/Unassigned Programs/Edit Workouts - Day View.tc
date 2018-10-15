@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Edit Workouts - Day View</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bcf6f2f6-bfbd-4c1a-929f-0e43e6d2d1cc</testCaseGuid>
+   <variable>
+      <defaultValue>'bridgetest1102+coach1@gmail.com'</defaultValue>
+      <description></description>
+      <id>859d5c12-b3b4-4c6e-909b-376b7a31900e</id>
+      <masked>false</masked>
+      <name>Coach</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>da9111d7-be01-4844-95ab-ff0f0228a802</id>
+      <masked>false</masked>
+      <name>all_program</name>
+   </variable>
+</TestCaseEntity>

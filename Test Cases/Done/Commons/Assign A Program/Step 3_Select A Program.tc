@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Step 3_Select A Program</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>14909abc-7e14-4d01-91a4-3f55846c7285</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a7c2d416-3864-4edc-88af-0277717ef982</id>
+      <masked>false</masked>
+      <name>var_ProgramName</name>
+   </variable>
+</TestCaseEntity>

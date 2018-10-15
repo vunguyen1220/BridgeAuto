@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Open App</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>044c70eb-c831-4868-bfaa-94da0851f92d</testCaseGuid>
+   <variable>
+      <defaultValue>'http://stg.bridgeathletic.com'</defaultValue>
+      <description></description>
+      <id>69bd8ed3-b5e1-43c0-a165-123d96686a48</id>
+      <masked>false</masked>
+      <name>var_url</name>
+   </variable>
+</TestCaseEntity>

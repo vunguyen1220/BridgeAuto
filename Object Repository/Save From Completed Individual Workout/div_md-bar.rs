@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_md-bar</name>
+   <tag></tag>
+   <elementGuidId>524e8736-ccc5-43c8-891a-e5b123393906</elementGuidId>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;exercise-content&quot;)/exercise-editor-blocksets[@class=&quot;scrollable unselector ng-isolate-scope&quot;]/div[@class=&quot;exercise-editor-blocksets unselector&quot;]/div[@class=&quot;unselector ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable sortable&quot;]/div[@class=&quot;single-row ng-scope&quot;]/div[@class=&quot;single-set&quot;]/div[@class=&quot;rest&quot;]/div[@class=&quot;toggle-btn&quot;]/md-switch[contains(@class,&quot;ng-untouched ng-valid md-default-theme&quot;)]/div[@class=&quot;md-container&quot;]/div[@class=&quot;md-bar&quot;]</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>md-bar</value>
+   </webElementProperties>
+</WebElementEntity>

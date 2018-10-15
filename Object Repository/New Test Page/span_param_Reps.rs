@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_param_Reps</name>
+   <tag></tag>
+   <elementGuidId>dd2680ae-961e-4f33-9df2-ec882b386928</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@ng-click=&quot;changeParam(item); $event.stopPropagation(); $event.preventDefault();&quot;]/span[text()=&quot;Reps&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>flex</name>
+      <type>Main</type>
+      <value>1</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ng-binding ng-scope</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Reps</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main-panel&quot;)/ui-view[@class=&quot;ng-scope&quot;]/new-test[@class=&quot;ng-scope ng-isolate-scope&quot;]/div[@class=&quot;new-test-panel new-test&quot;]/md-content[@class=&quot;md-default-theme&quot;]/div[@class=&quot;test-content&quot;]/div[@class=&quot;form-group&quot;]/span[@class=&quot;newtest-row&quot;]/div[3]/div[1]/a[@class=&quot;md-button ng-scope md-default-theme&quot;]/span[@class=&quot;ng-binding ng-scope&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

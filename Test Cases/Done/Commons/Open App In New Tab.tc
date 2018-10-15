@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Open App In New Tab</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e5460b8c-be11-4eb3-8f1a-73d4bd747a40</testCaseGuid>
+   <variable>
+      <defaultValue>'http://stg.bridgeathletic.com'</defaultValue>
+      <description></description>
+      <id>dbb9e08d-9d47-42a2-ae3b-277e11b48448</id>
+      <masked>false</masked>
+      <name>var_Url</name>
+   </variable>
+</TestCaseEntity>

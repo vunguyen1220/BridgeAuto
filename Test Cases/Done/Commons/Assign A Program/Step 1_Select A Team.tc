@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Step 1_Select A Team</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1b37c874-7f22-4997-9d3e-29eee1e2f672</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>25713a13-beaa-4090-a3a7-adb597902e9e</id>
+      <masked>false</masked>
+      <name>var_TeamName</name>
+   </variable>
+   <variable>
+      <defaultValue>1</defaultValue>
+      <description></description>
+      <id>4376f656-edaf-40d4-8e6a-2a0733fdbc29</id>
+      <masked>false</masked>
+      <name>var_MemberNumbers</name>
+   </variable>
+</TestCaseEntity>

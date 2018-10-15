@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add New Exercise And Set Value</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e0fa6dba-b83f-4754-a7d3-73910675039f</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a3074742-0c5a-4082-9049-62ae1dae5e51</id>
+      <masked>false</masked>
+      <name>var_exerciseName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>1be0732a-3de5-4412-8a0f-083e1ca4779c</id>
+      <masked>false</masked>
+      <name>var_blockName</name>
+   </variable>
+   <variable>
+      <defaultValue>[]</defaultValue>
+      <description></description>
+      <id>ec15fa14-236c-4377-8ea2-8e8d813d3ccf</id>
+      <masked>false</masked>
+      <name>var_paramList</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>8b065046-574f-4e15-b609-36a992460ba8</id>
+      <masked>false</masked>
+      <name>var_setNumbers</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>fc8f9dda-b5ad-48aa-a8af-7d492084499a</id>
+      <masked>false</masked>
+      <name>var_paramNumbers</name>
+   </variable>
+</TestCaseEntity>

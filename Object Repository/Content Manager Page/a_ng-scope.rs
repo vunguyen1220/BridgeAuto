@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_ng-scope</name>
+   <tag></tag>
+   <elementGuidId>2382028d-125f-45e6-af0a-102e8c4e90c8</elementGuidId>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>ul</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>layout</name>
+      <type>Main</type>
+      <value>row</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;menu&quot;)/nav[@class=&quot;multilevelpushmenu_wrapper ltr&quot;]/div[@class=&quot;levelHolderClass ng-isolate-scope visible multilevelpushmenu_inactive level-0&quot;]/div[@class=&quot;item-container&quot;]/ul[@class=&quot;ng-scope invisible&quot;]/li[@class=&quot;ng-scope&quot;]/div[@class=&quot;ng-scope&quot;]/recursive[1]/div[@class=&quot;levelHolderClass ng-scope ng-isolate-scope visible multilevelpushmenu_inactive level-1&quot;]/div[@class=&quot;item-container&quot;]/ul[@class=&quot;ng-scope invisible&quot;]/li[@class=&quot;ng-scope&quot;]/div[@class=&quot;ng-scope&quot;]/recursive[1]/div[@class=&quot;levelHolderClass ng-isolate-scope visible&quot;]/div[@class=&quot;item-container&quot;]/ul[@class=&quot;ng-scope&quot;]</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-click</name>
+      <type>Main</type>
+      <value>addPhaseToProgram(item.elementId); changeState(item.type, item.elementId, item)</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-if</name>
+      <type>Main</type>
+      <value>item.elementId &amp;&amp; !item.children</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ng-scope</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>layout-align</name>
+      <type>Main</type>
+      <value>start center</value>
+   </webElementProperties>
+</WebElementEntity>

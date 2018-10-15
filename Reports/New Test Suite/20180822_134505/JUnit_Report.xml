@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="New Test Suite" time="29" tests="0" failures="0" errors="1">
+   <testsuite name="New Test Suite" tests="0" failures="0" errors="1" time="29" timestamp="2018-08-22 13:45:09" hostname="VuNA - 192.168.86.34" id="Test Suites/New Test Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\Katalon\\bridge-tracker\\Reports\\New Test Suite\\20180822_134505"/>
+         <property name="logFiles" value="D:\\Katalon\\bridge-tracker\\Reports\\New Test Suite\\20180822_134505\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="VuNA - 192.168.86.34"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.6.0.1"/>
+         <property name="browser" value="Chrome 68.0.3440.106"/>
+         <property name="hostAddress" value="192.168.86.34"/>
+         <property name="sessionId" value="ffd8cdb8d312760bcb16c16172186688"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Performance Test Case" classname="Test Cases/Performance Test Case" status="ERROR">
+         <error type="ERROR" message="Test Cases/Performance Test Case FAILED because (of) org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-9K9SI5R', ip: '192.168.86.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\VuNA\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
+Session ID: ffd8cdb8d312760bcb16c16172186688
+*** Element info: {Using=xpath, value=//div[@id=&quot;messageAlert&quot;]/span[@aria-hidden=&quot;false&quot;]}"/>
+         <system-out><![CDATA[2018-08-22 13:45:10 - [TEST_CASE][ERROR] - Test Cases/Performance Test Case: Test Cases/Performance Test Case FAILED because (of) org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-9K9SI5R', ip: '192.168.86.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\VuNA\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
+Session ID: ffd8cdb8d312760bcb16c16172186688
+*** Element info: {Using=xpath, value=//div[@id="messageAlert"]/span[@aria-hidden="false"]}
+
+2018-08-22 13:45:10 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: Invoke 'com.kms.katalon.core.annotation.BeforeTestCase' method: 'LoginTestListener.sampleBeforeTestCase(...)' completed.
+
+2018-08-22 13:45:10 - [TEST_STEP][PASSED] - Statement - println(testCaseContext.getTestCaseId()): null
+
+2018-08-22 13:45:10 - [TEST_STEP][PASSED] - Statement - println(testCaseContext.getTestCaseVariables()): Invoke 'com.kms.katalon.core.annotation.BeforeTestCase' method: 'LoginTestListener.sampleBeforeTestCase(...)' completed.
+
+2018-08-22 13:45:11 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Done/Commons/NavigateToApp' successfully
+
+2018-08-22 13:45:11 - [TEST_CASE][PASSED] - Test Cases/Done/Commons/NavigateToApp: Test Cases/Done/Commons/NavigateToApp
+
+2018-08-22 13:45:11 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-08-22 13:45:15 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-08-22 13:45:15 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://stg.bridgeathletic.com/' successfully
+
+2018-08-22 13:45:25 - [MESSAGE][PASSED] - Navigate to 'http://stg.bridgeathletic.com/' successfully
+
+2018-08-22 13:45:25 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Done/Commons/NavigateToApp' successfully
+
+2018-08-22 13:45:25 - [TEST_STEP][FAILED] - callTestCase: Unable to call Test Case with id 'Test Cases/Done/Commons/Login' (Root cause: Call Test Case 'Test Cases/Done/Commons/Login' failed because of error(s))
+
+2018-08-22 13:45:25 - [TEST_CASE][ERROR] - Test Cases/Done/Commons/Login: Test Cases/Done/Commons/Login FAILED because (of) org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-9K9SI5R', ip: '192.168.86.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\VuNA\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
+Session ID: ffd8cdb8d312760bcb16c16172186688
+*** Element info: {Using=xpath, value=//div[@id="messageAlert"]/span[@aria-hidden="false"]}
+
+2018-08-22 13:45:26 - [TEST_STEP][PASSED] - Statement - driver = com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(): null
+
+2018-08-22 13:45:26 - [TEST_STEP][PASSED] - Statement - email = email: null
+
+2018-08-22 13:45:26 - [TEST_STEP][PASSED] - Statement - password = password: null
+
+2018-08-22 13:45:26 - [TEST_STEP][PASSED] - Statement - current_url = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getUrl(): Current window's url is: 'http://stg.bridgeathletic.com/'
+
+2018-08-22 13:45:26 - [MESSAGE][PASSED] - Current window's url is: 'http://stg.bridgeathletic.com/'
+
+2018-08-22 13:45:26 - [TEST_STEP][PASSED] - Statement - If (com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyMatch(current_url, "http://stg.bridgeathletic.com/", false, OPTIONAL) == false): Actual text 'http://stg.bridgeathletic.com/' and expected text 'http://stg.bridgeathletic.com/' are matched 
+
+2018-08-22 13:45:26 - [MESSAGE][PASSED] - Actual text 'http://stg.bridgeathletic.com/' and expected text 'http://stg.bridgeathletic.com/' are matched 
+
+2018-08-22 13:45:26 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Home Page/a_Login' is clicked on
+
+2018-08-22 13:45:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/a_Login' is clicked on
+
+2018-08-22 13:45:28 - [TEST_STEP][PASSED] - setText: Text 'test+assay2@bridgeathletic.com' is set on object 'Object Repository/Login Page/input_email'
+
+2018-08-22 13:45:29 - [MESSAGE][PASSED] - Text 'test+assay2@bridgeathletic.com' is set on object 'Object Repository/Login Page/input_email'
+
+2018-08-22 13:45:29 - [TEST_STEP][PASSED] - setText: Text '23456789' is set on object 'Object Repository/Login Page/input_password'
+
+2018-08-22 13:45:29 - [MESSAGE][PASSED] - Text '23456789' is set on object 'Object Repository/Login Page/input_password'
+
+2018-08-22 13:45:29 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Login Page/button_LOGIN' is clicked on
+
+2018-08-22 13:45:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Login Page/button_LOGIN' is clicked on
+
+2018-08-22 13:45:32 - [TEST_STEP][PASSED] - waitForElementPresent: Object 'Object Repository/Header/div_user-details' is present
+
+2018-08-22 13:45:34 - [MESSAGE][PASSED] - Object 'Object Repository/Header/div_user-details' is present
+
+2018-08-22 13:45:34 - [TEST_STEP][PASSED] - Statement - If (driver.findElements(org.openqa.selenium.By.xpath("//button[@class="md-raised md-button md-default-theme"]")).size() > 0): Object: '' is clicked on
+
+2018-08-22 13:45:35 - [TEST_STEP][PASSED] - Statement - reload = new com.kms.katalon.core.testobject.TestObject(): null
+
+2018-08-22 13:45:35 - [TEST_STEP][PASSED] - Statement - reload.addProperty("xpath", EQUALS, "//button[@class="md-raised md-button md-default-theme"]", true): null
+
+2018-08-22 13:45:35 - [TEST_STEP][PASSED] - click: Object: '' is clicked on
+
+2018-08-22 13:45:37 - [MESSAGE][PASSED] - Object: '' is clicked on
+
+2018-08-22 13:45:37 - [TEST_STEP][FAILED] - callTestCase: Unable to call Test Case with id 'Test Cases/Done/Commons/Waiting' (Root cause: Call Test Case 'Test Cases/Done/Commons/Waiting' failed because of error(s))
+
+2018-08-22 13:45:37 - [TEST_CASE][ERROR] - Test Cases/Done/Commons/Waiting: Test Cases/Done/Commons/Waiting FAILED because (of) org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-9K9SI5R', ip: '192.168.86.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\VuNA\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
+Session ID: ffd8cdb8d312760bcb16c16172186688
+*** Element info: {Using=xpath, value=//div[@id="messageAlert"]/span[@aria-hidden="false"]}
+
+2018-08-22 13:45:37 - [TEST_STEP][PASSED] - Statement - driver = com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(): null
+
+2018-08-22 13:45:37 - [TEST_STEP][PASSED] - Statement - flag = true: null
+
+2018-08-22 13:45:37 - [TEST_STEP][PASSED] - Statement - While (flag == true): null
+
+2018-08-22 13:45:37 - [TEST_STEP][PASSED] - delay: Delayed 1 second(s)
+
+2018-08-22 13:45:38 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2018-08-22 13:45:38 - [TEST_STEP][PASSED] - Statement - flag = false: null
+
+2018-08-22 13:45:38 - [TEST_STEP][PASSED] - Statement - If (driver.findElements(org.openqa.selenium.By.xpath("//div[@id="messageAlert"]/span[@aria-hidden="false"]")).size() > 0): null
+
+2018-08-22 13:45:38 - [MESSAGE][FAILED] - Unable to call Test Case with id 'Test Cases/Done/Commons/Waiting' (Root cause: Call Test Case 'Test Cases/Done/Commons/Waiting' failed because of error(s))
+
+2018-08-22 13:45:38 - [MESSAGE][FAILED] - Unable to call Test Case with id 'Test Cases/Done/Commons/Login' (Root cause: Call Test Case 'Test Cases/Done/Commons/Login' failed because of error(s))]]></system-out>
+         <system-err><![CDATA[2018-08-22 13:45:10 - [TEST_CASE][ERROR] - Test Cases/Performance Test Case: Test Cases/Performance Test Case FAILED because (of) org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-9K9SI5R', ip: '192.168.86.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\VuNA\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
+Session ID: ffd8cdb8d312760bcb16c16172186688
+*** Element info: {Using=xpath, value=//div[@id="messageAlert"]/span[@aria-hidden="false"]}]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-08-22 13:45:09 - [TEST_SUITE][ERROR] - New Test Suite: Test Cases/Performance Test Case FAILED because (of) org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-9K9SI5R', ip: '192.168.86.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\VuNA\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
+Session ID: ffd8cdb8d312760bcb16c16172186688
+*** Element info: {Using=xpath, value=//div[@id="messageAlert"]/span[@aria-hidden="false"]}]]></system-out>
+      <system-err><![CDATA[2018-08-22 13:45:09 - [TEST_SUITE][ERROR] - New Test Suite: Test Cases/Performance Test Case FAILED because (of) org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'DESKTOP-9K9SI5R', ip: '192.168.86.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\VuNA\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
+Session ID: ffd8cdb8d312760bcb16c16172186688
+*** Element info: {Using=xpath, value=//div[@id="messageAlert"]/span[@aria-hidden="false"]}]]></system-err>
+   </testsuite>
+</testsuites>

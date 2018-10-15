@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Assign A Program</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>da4d5604-da8b-48f3-8547-631426e3ee3c</testCaseGuid>
+   <variable>
+      <defaultValue>[(programName) : '', (memberNumbers) : 0, (teamName) : '']</defaultValue>
+      <description></description>
+      <id>2904335d-1948-41f3-bad1-921fd8b6da77</id>
+      <masked>false</masked>
+      <name>var_AssignData</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Edit Phase</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>72192d9e-431e-4502-861d-462c7c7103b7</testCaseGuid>
+   <variable>
+      <defaultValue>'bridgtest1102+coach1@gmail.com'</defaultValue>
+      <description></description>
+      <id>7d28da82-98a0-4d50-8d0c-cf59a4e2e6c0</id>
+      <masked>false</masked>
+      <name>Coach</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8712913a-7d45-4158-af5c-e2af13b3a8eb</id>
+      <masked>false</masked>
+      <name>all_program</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9abd6bdf-7a63-4830-bd68-de2b7919f98d</id>
+      <masked>false</masked>
+      <name>array</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7cef740f-1a5a-47e5-87db-5e7a526369cb</id>
+      <masked>false</masked>
+      <name>selected_program</name>
+   </variable>
+   <variable>
+      <defaultValue>'Test Template Phase 01'</defaultValue>
+      <description></description>
+      <id>66fb3643-2bbe-424e-94ad-32f2c580b119</id>
+      <masked>false</masked>
+      <name>name_template_phase</name>
+   </variable>
+</TestCaseEntity>

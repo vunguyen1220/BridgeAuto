@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Login</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ce3e68fc-9846-4543-8ca8-7292c7613dec</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5eb538a1-765b-423b-ad0e-beb992f7d656</id>
+      <masked>false</masked>
+      <name>var_email</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d5e31760-1bc7-4b4c-9f85-25dea3cb4265</id>
+      <masked>false</masked>
+      <name>var_password</name>
+   </variable>
+   <variable>
+      <defaultValue>'http://stg.bridgeathletic.com'</defaultValue>
+      <description></description>
+      <id>87820592-ee16-4d5c-9806-1d89280c45df</id>
+      <masked>false</masked>
+      <name>var_url</name>
+   </variable>
+</TestCaseEntity>

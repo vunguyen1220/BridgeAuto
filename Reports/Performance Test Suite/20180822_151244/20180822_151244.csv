@@ -1,0 +1,10 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Performance Test Suite,Chrome 68.0.3440.106,,2018-08-22 15:12:47,2018-08-22 15:14:34,1m - 47.305s,FAILED
+,,,,,,
+Test Cases/loop_perf,Chrome 68.0.3440.106,,2018-08-22 15:12:48,2018-08-22 15:14:34,1m - 46.198s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 68.0.3440.106,,2018-08-22 15:12:48,2018-08-22 15:12:48,0.091s,PASSED
+Statement - formatter = new java.text.SimpleDateFormat(HH),Chrome 68.0.3440.106,,2018-08-22 15:12:49,2018-08-22 15:12:49,0.010s,PASSED
+Statement - date = new java.util.Date(),Chrome 68.0.3440.106,,2018-08-22 15:12:49,2018-08-22 15:12:49,0.015s,PASSED
+Statement - H = formatter.format(date),Chrome 68.0.3440.106,,2018-08-22 15:12:49,2018-08-22 15:12:49,0.002s,PASSED
+Statement - println(H),Chrome 68.0.3440.106,,2018-08-22 15:12:49,2018-08-22 15:12:49,0.003s,PASSED
+Statement - While (H < 17),Chrome 68.0.3440.106,,2018-08-22 15:12:49,2018-08-22 15:14:34,1m - 45.663s,FAILED

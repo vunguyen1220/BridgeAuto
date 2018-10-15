@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_httpstg.bridgeathletic.com o</name>
+   <tag></tag>
+   <elementGuidId>0491b4a3-de13-4ffb-8bd1-0de9507de8fb</elementGuidId>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;m_-811424688915586320templateBody&quot;)/tbody[1]/tr[1]/td[1]/table[@class=&quot;m_-811424688915586320templateContainer&quot;]/tbody[1]/tr[1]/td[@class=&quot;m_-811424688915586320bodyContainer&quot;]/table[@class=&quot;m_-811424688915586320mcnTextBlock&quot;]/tbody[@class=&quot;m_-811424688915586320mcnTextBlockOuter&quot;]/tr[1]/td[@class=&quot;m_-811424688915586320mcnTextBlockInner&quot;]/table[@class=&quot;m_-811424688915586320mcnTextContentContainer&quot;]/tbody[1]/tr[1]/td[@class=&quot;m_-811424688915586320mcnTextContent&quot;]/p[3]/a[1]</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>https://mandrillapp.com/track/click/30053979/stg.bridgeathletic.com?p=eyJzIjoiZTZOU09acmF2VnJlX3VveHMzbk0zR2IyQlQ4IiwidiI6MSwicCI6IntcInVcIjozMDA1Mzk3OSxcInZcIjoxLFwidXJsXCI6XCJodHRwOlxcXC9cXFwvc3RnLmJyaWRnZWF0aGxldGljLmNvbVxcXC9vcmdhbml6YXRpb25zXFxcLzE5XFxcL2ludml0YXRpb25zXFxcLzQ4Mjg5XFxcL3NpZ251cFxcXC8yYmVkZTAwNi1hNDFmLTQzZjMtODk5MC03MjkyNDM3MGU4ZGVcIixcImlkXCI6XCI2MDVmMTgxNzkzYWM0NTQ5YTIwYjc5YjE4ZGVkMjY4MlwiLFwidXJsX2lkc1wiOltcImEzOGU2NDNkMDJkMjE3NTdiNjdmMmE2YjRjNzQ5NDMzOGVhNWUwMzRcIl19In0</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-saferedirecturl</name>
+      <type>Main</type>
+      <value>https://www.google.com/url?hl=vi&amp;q=https://mandrillapp.com/track/click/30053979/stg.bridgeathletic.com?p%3DeyJzIjoiZTZOU09acmF2VnJlX3VveHMzbk0zR2IyQlQ4IiwidiI6MSwicCI6IntcInVcIjozMDA1Mzk3OSxcInZcIjoxLFwidXJsXCI6XCJodHRwOlxcXC9cXFwvc3RnLmJyaWRnZWF0aGxldGljLmNvbVxcXC9vcmdhbml6YXRpb25zXFxcLzE5XFxcL2ludml0YXRpb25zXFxcLzQ4Mjg5XFxcL3NpZ251cFxcXC8yYmVkZTAwNi1hNDFmLTQzZjMtODk5MC03MjkyNDM3MGU4ZGVcIixcImlkXCI6XCI2MDVmMTgxNzkzYWM0NTQ5YTIwYjc5YjE4ZGVkMjY4MlwiLFwidXJsX2lkc1wiOltcImEzOGU2NDNkMDJkMjE3NTdiNjdmMmE2YjRjNzQ5NDMzOGVhNWUwMzRcIl19In0&amp;source=gmail&amp;ust=1501656973800000&amp;usg=AFQjCNF9OkzhdCjs1_C69P3FkOH4SPZC8Q</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>starts with</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>http://stg.bridgeathletic.com/organizations/19/invitations</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>target</name>
+      <type>Main</type>
+      <value>_blank</value>
+   </webElementProperties>
+</WebElementEntity>

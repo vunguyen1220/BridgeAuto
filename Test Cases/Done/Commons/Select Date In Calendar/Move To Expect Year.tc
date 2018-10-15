@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Move To Expect Year</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>615352cb-9232-4974-a755-e177d3d6861e</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>60d36dd8-fb85-437f-b65e-ab2bbdff77dc</id>
+      <masked>false</masked>
+      <name>var_year</name>
+   </variable>
+</TestCaseEntity>

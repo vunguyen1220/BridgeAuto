@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Select Date In Assign Calendar</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>539a6c79-c83c-4849-a270-2fbca2240b2a</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>8e300fb7-a21b-475d-ba11-0e2bdeb49b4c</id>
+      <masked>false</masked>
+      <name>var_day</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>fe1f3734-fc38-4d35-ae14-5bb5a269af8b</id>
+      <masked>false</masked>
+      <name>var_month</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>c21aacfe-30cc-491f-be8b-7f286c258c66</id>
+      <masked>false</masked>
+      <name>var_year</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_md-thumb</name>
+   <tag></tag>
+   <elementGuidId>091a5d14-1f79-453d-9a05-40a387ec16bd</elementGuidId>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;exercise-content&quot;)/exercise-editor-param-selector[@class=&quot;ng-isolate-scope&quot;]/div[@class=&quot;exercise-editor-param-selector&quot;]/div[@class=&quot;params-toggle clearfix unselector&quot;]/div[2]/div[1]/div[@class=&quot;text-center ng-scope&quot;]/div[@class=&quot;toggle-btn&quot;]/md-switch[not(contains(@class,'md-checked'))]/div[@class=&quot;md-container&quot;]/div[@class=&quot;md-thumb-container&quot;]/div[@class=&quot;md-thumb&quot;]</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>md-thumb</value>
+   </webElementProperties>
+</WebElementEntity>

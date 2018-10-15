@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Format Variations</name>
+   <tag></tag>
+   <comment>You should now see the Team Page
+You should see the titles: NAME     STATUS     CURRENT PROGRAM   ATTENDANCE  |  &quot;Phase Name&quot;</comment>
+   <testCaseGuid>de4199a8-7f0f-4451-a334-9e188026c3e2</testCaseGuid>
+</TestCaseEntity>

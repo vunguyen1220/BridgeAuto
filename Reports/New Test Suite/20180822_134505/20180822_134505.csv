@@ -1,0 +1,7 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+New Test Suite,Chrome 68.0.3440.106,,2018-08-22 13:45:09,2018-08-22 13:45:38,29.785s,ERROR
+,,,,,,
+Test Cases/Performance Test Case,Chrome 68.0.3440.106,,2018-08-22 13:45:10,2018-08-22 13:45:38,28.582s,ERROR
+Start listener action : sampleBeforeTestCase,Chrome 68.0.3440.106,,2018-08-22 13:45:10,2018-08-22 13:45:10,0.079s,PASSED
+callTestCase,Chrome 68.0.3440.106,,2018-08-22 13:45:11,2018-08-22 13:45:25,14.819s,PASSED
+callTestCase,Chrome 68.0.3440.106,,2018-08-22 13:45:25,2018-08-22 13:45:38,13.022s,FAILED
