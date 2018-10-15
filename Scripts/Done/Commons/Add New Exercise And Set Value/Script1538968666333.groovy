@@ -18,6 +18,8 @@ CustomKeywords.'com.bridgeathletic.block.expandBlockFromName'(var_blockName)
 
 CustomKeywords.'com.bridgeathletic.exercise.addNewExerciseFromBlockName'(var_blockName, var_exerciseName)
 
+CustomKeywords.'com.bridgeathletic.exercise.selectExerciseFromName'(var_blockName, var_exerciseName)
+
 if (var_paramList == [] && var_paramNumbers > 0){
 	
 	var_paramList = CustomKeywords.'com.bridgeathletic.parameter.getRandomParameterList'(var_paramNumbers)

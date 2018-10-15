@@ -78,6 +78,14 @@ def static "com.bridgeathletic.exercise.addNewExerciseFromBlockName"(
          , 	exerciseName)
 }
 
+def static "com.bridgeathletic.exercise.selectExerciseFromName"(
+    	String blockName	
+     , 	String exerciseName	) {
+    (new com.bridgeathletic.exercise()).selectExerciseFromName(
+        	blockName
+         , 	exerciseName)
+}
+
 def static "com.bridgeathletic.exercise.editParameterNumbers"(
     	java.util.List<String> paramName	) {
     (new com.bridgeathletic.exercise()).editParameterNumbers(
