@@ -9,6 +9,7 @@ import com.bridgeathletic.block
 import com.bridgeathletic.exercise
 import com.bridgeathletic.program
 import com.bridgeathletic.workout
+import com.bridgeathletic.phase
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
@@ -87,6 +88,12 @@ WebUI.callTestCase(findTestCase('Done/Commons/Navigate To User Detail'), [var_us
 
 WebUI.switchToWindowIndex(0)
 
+Object currentPhase = new phase()
+
+int currentPhaseIndex = CustomKeywords.'com.bridgeathletic.phase.getPhaseIndexByName'(selectProgramInfo.currentPhase)
+
+currentPhase = CustomKeywords.'com.bridgeathletic.phase.getPhaseInfoInDetail'(currentPhaseIndex)
+
 TestObject editCurrentPhaseObject = CustomKeywords.'com.bridgeathletic.phase.getEditPhaseObjectByName'(selectProgramInfo.currentPhase)
 
 WebUI.click(editCurrentPhaseObject)
@@ -125,3 +132,6 @@ WebUI.switchToWindowIndex(1)
 
 WebUI.refresh()
 
+WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
+
+CustomKeywords.'com.bridgeathletic.calendar.selectDateInCalendar'(currentPhase.startDate)
