@@ -22,13 +22,13 @@ import internal.GlobalVariable as GlobalVariable
 
 if (var_year != 0){
 
-	WebUI.callTestCase(findTestCase('Done/Commons/Select Date In Calendar/Move To Expect Year'), [var_year:var_year])
+	WebUI.callTestCase(findTestCase('Done/Commons/Select Date In Calendar/Program Calendar/Move To Expect Year'), [var_year:var_year])
 
 }
 
 if (var_month != 0){
 
-	WebUI.callTestCase(findTestCase('Done/Commons/Select Date In Calendar/Move To Expect Month'), [var_month:var_month])
+	WebUI.callTestCase(findTestCase('Done/Commons/Select Date In Calendar/Program Calendar/Move To Expect Month'), [var_month:var_month])
 
 }
 

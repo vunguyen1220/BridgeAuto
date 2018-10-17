@@ -25,7 +25,7 @@ int dayNumbers = Integer.parseInt(WebUI.getText(findTestObject('Program Assignme
 
 CustomKeywords.'com.bridgeathletic.random.selectRandomDay'(dayNumbers)
 
-WebUI.callTestCase(findTestCase('Done/Commons/Select Date In Calendar/Select Date In Assign Calendar'), [:])
+WebUI.callTestCase(findTestCase('Done/Commons/Select Date In Calendar/Program Calendar/Select Date In Assign Calendar'), [:])
 
 WebUI.waitForElementPresent(findTestObject('Program Assignment Popup/button_Current Week'), 30)
 
