@@ -135,3 +135,10 @@ WebUI.refresh()
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
 CustomKeywords.'com.bridgeathletic.calendar.selectDateInCalendar'(currentPhase.startDate)
+
+WebUI.callTestCase(findTestCase('Done/Commons/Select Date In Calendar/Athlete Calendar/Select Date In Athlete Calendar'), null)
+
+
+
+
+

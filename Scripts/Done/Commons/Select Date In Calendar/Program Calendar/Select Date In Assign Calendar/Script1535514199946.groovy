@@ -22,19 +22,19 @@ import internal.GlobalVariable as GlobalVariable
 
 if (var_year != 0){
 
-	WebUI.callTestCase(findTestCase('Done/Commons/Select Date In Calendar/Program Calendar/Move To Expect Year'), [var_year:var_year])
+	WebUI.callTestCase(findTestCase('Done/Commons/Select Date In Calendar/Program Calendar/Move To Expect Year In Program Calendar'), [var_year:var_year])
 
 }
 
 if (var_month != 0){
 
-	WebUI.callTestCase(findTestCase('Done/Commons/Select Date In Calendar/Program Calendar/Move To Expect Month'), [var_month:var_month])
+	WebUI.callTestCase(findTestCase('Done/Commons/Select Date In Calendar/Program Calendar/Move To Expect Month In Program Calendar'), [var_month:var_month])
 
 }
 
 if (var_day != 0){
 
-	List<String> currentDate = WebUI.getText(findTestObject('Commons/Calendar Popup/header_Current Date')).split(' ')
+	List<String> currentDate = WebUI.getText(findTestObject('Commons/Program Calendar Popup/header_Current Date')).split(' ')
 
 	int currentMonth = CustomKeywords.'com.bridgeathletic.convert.convertMonthFromStringToInteger'(currentDate[0], 'MMMM')
 
@@ -76,6 +76,6 @@ if (var_day != 0){
 
 else {
 
-	WebUI.click(findTestObject('Commons/Calendar Popup/button_Today'))
+	WebUI.click(findTestObject('Commons/Program Calendar Popup/button_Today'))
 
 }

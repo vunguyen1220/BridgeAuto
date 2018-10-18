@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-List<String> currentDate = WebUI.getText(findTestObject('Commons/Calendar Popup/header_Current Date')).split(' ')
+List<String> currentDate = WebUI.getText(findTestObject('Commons/Athlete Calendar/text_Current Date')).split(' ')
 
 int currentMonth = CustomKeywords.'com.bridgeathletic.convert.convertMonthFromStringToInteger'(currentDate[0], 'MMMM')
 
@@ -27,11 +27,11 @@ while (currentMonth != var_month){
 	
 	if (currentMonth < var_month){
 		
-		WebUI.click(findTestObject('Commons/Calendar Popup/button_Next'))
+		WebUI.click(findTestObject('Commons/Program Calendar Popup/button_Next'))
 		
 		Thread.sleep(500)
 		
-		currentDate = WebUI.getText(findTestObject('Commons/Calendar Popup/header_Current Date')).split(' ')
+		currentDate = WebUI.getText(findTestObject('Commons/Program Calendar Popup/header_Current Date')).split(' ')
 		
 		currentMonth = CustomKeywords.'com.bridgeathletic.convert.convertMonthFromStringToInteger'(currentDate[0], 'MMMM')
 		
@@ -39,11 +39,11 @@ while (currentMonth != var_month){
 	
 	else {
 		
-		WebUI.click(findTestObject('Commons/Calendar Popup/button_Previous'))
+		WebUI.click(findTestObject('Commons/Program Calendar Popup/button_Previous'))
 		
 		Thread.sleep(500)
 		
-		currentDate = WebUI.getText(findTestObject('Commons/Calendar Popup/header_Current Date')).split(' ')
+		currentDate = WebUI.getText(findTestObject('Commons/Program Calendar Popup/header_Current Date')).split(' ')
 		
 		currentMonth = CustomKeywords.'com.bridgeathletic.convert.convertMonthFromStringToInteger'(currentDate[0], 'MMMM')
 		

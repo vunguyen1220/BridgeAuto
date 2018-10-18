@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Move To Expect Year</name>
+   <name>Move To Expect Month In Program Calendar</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>615352cb-9232-4974-a755-e177d3d6861e</testCaseGuid>
+   <testCaseGuid>007211ef-ebfa-4a66-8222-5103fa47d648</testCaseGuid>
    <variable>
       <defaultValue>0</defaultValue>
       <description></description>
-      <id>60d36dd8-fb85-437f-b65e-ab2bbdff77dc</id>
+      <id>7eb08e4f-1d7e-4be0-87f6-93a5fbd3a392</id>
       <masked>false</masked>
-      <name>var_year</name>
+      <name>var_month</name>
    </variable>
 </TestCaseEntity>

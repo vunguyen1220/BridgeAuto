@@ -336,6 +336,14 @@ def static "com.bridgeathletic.convert.convertMonthFromIntToString"(
          , 	format)
 }
 
+def static "com.bridgeathletic.convert.convertFromDateStringToDateList"(
+    	String date	
+     , 	String format	) {
+    (new com.bridgeathletic.convert()).convertFromDateStringToDateList(
+        	date
+         , 	format)
+}
+
 def static "com.bridgeathletic.user.getUserInfo"(
     	int index	) {
     (new com.bridgeathletic.user()).getUserInfo(

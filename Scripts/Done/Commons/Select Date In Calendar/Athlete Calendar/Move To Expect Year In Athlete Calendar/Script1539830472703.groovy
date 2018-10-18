@@ -13,3 +13,28 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+int currentYear = Integer.parseInt(WebUI.getText(findTestObject('Commons/Athlete Calendar/text_Current Date')).split(' ')[1])
+
+while (currentYear != var_year){
+	
+	if (currentYear < var_year){
+		
+		WebUI.click(findTestObject('Commons/Athlete Calendar/button_Next'))
+		
+		Thread.sleep(500)
+		
+	}
+	
+	else {
+		
+		WebUI.click(findTestObject('Commons/Athlete Calendar/button_Previous'))
+		
+		Thread.sleep(500)
+		
+	}
+	
+	currentYear = Integer.parseInt(WebUI.getText(findTestObject('Commons/Athlete Calendar/text_Current Date')).split(' ')[1])
+	
+}
+
+

@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-List<String> currentDate = WebUI.getText(findTestObject('Commons/Calendar Popup/header_Current Date')).split(' ')
+List<String> currentDate = WebUI.getText(findTestObject('Commons/Program Calendar Popup/header_Current Date')).split(' ')
 
 int currentYear = Integer.parseInt(currentDate[1])
 
@@ -27,22 +27,20 @@ while (currentYear != var_year){
 	
 	if (currentYear < var_year){
 		
-		WebUI.click(findTestObject('Commons/Calendar Popup/button_Next'))
+		WebUI.click(findTestObject('Commons/Program Calendar Popup/button_Next'))
 		
 		Thread.sleep(500)
-		
-		currentYear = Integer.parseInt(WebUI.getText(findTestObject('Commons/Calendar Popup/header_Current Date')).split(' ')[1])
 		
 	}
 	
 	else {
 		
-		WebUI.click(findTestObject('Commons/Calendar Popup/button_Previous'))
+		WebUI.click(findTestObject('Commons/Program Calendar Popup/button_Previous'))
 		
 		Thread.sleep(500)
 		
-		currentYear = Integer.parseInt(WebUI.getText(findTestObject('Commons/Calendar Popup/header_Current Date')).split(' ')[1])
-		
 	}
+	
+	currentYear = Integer.parseInt(WebUI.getText(findTestObject('Commons/Program Calendar Popup/header_Current Date')).split(' ')[1])
 	
 }
