@@ -134,9 +134,13 @@ WebUI.refresh()
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-CustomKeywords.'com.bridgeathletic.calendar.selectDateInCalendar'(currentPhase.startDate)
+WebUI.waitForElementPresent(findTestObject('Commons/Program Calendar Popup/header_Current Date'), 30)
 
-WebUI.callTestCase(findTestCase('Done/Commons/Select Date In Calendar/Athlete Calendar/Select Date In Athlete Calendar'), null)
+List<Integer> dateList = []
+
+dateList = CustomKeywords.'com.bridgeathletic.convert.convertFromDateStringToDateList'(currentPhase.startDate, 'MMM dd, yyyy')
+
+WebUI.callTestCase(findTestCase('Done/Commons/Select Date In Calendar/Athlete Calendar/Select Date In Athlete Calendar'), [var_day:dateList[0], var_month:dateList[1], var_year:dateList[2]])
 
 
 

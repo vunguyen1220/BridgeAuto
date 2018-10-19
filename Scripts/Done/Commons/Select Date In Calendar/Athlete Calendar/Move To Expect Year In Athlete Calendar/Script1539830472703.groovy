@@ -21,7 +21,7 @@ while (currentYear != var_year){
 		
 		WebUI.click(findTestObject('Commons/Athlete Calendar/button_Next'))
 		
-		Thread.sleep(500)
+		WebUI.delay(1)
 		
 	}
 	
@@ -29,7 +29,7 @@ while (currentYear != var_year){
 		
 		WebUI.click(findTestObject('Commons/Athlete Calendar/button_Previous'))
 		
-		Thread.sleep(500)
+		WebUI.delay(1)
 		
 	}
 	
@@ -37,4 +37,4 @@ while (currentYear != var_year){
 	
 }
 
-
+WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])

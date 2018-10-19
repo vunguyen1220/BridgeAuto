@@ -60,8 +60,9 @@ else {
 
 TestObject selectDayObject = new TestObject()
 
-selectDayObject.addProperty('xpath', ConditionType.EQUALS, '//td[@data-date = "'+ day +'"]//div[@class="fc-day-content"]', true)
+selectDayObject.addProperty('xpath', ConditionType.EQUALS, '//td[@data-date="'+ day +'"]//div[@class="fc-day-number"]', true)
 
-
+return selectDayObject
+//CustomKeywords.'com.bridgeathletic.click.clickPositionObject'(selectDayObject)
 
 

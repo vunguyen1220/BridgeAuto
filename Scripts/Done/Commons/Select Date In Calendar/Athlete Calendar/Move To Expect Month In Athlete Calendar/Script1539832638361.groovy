@@ -23,7 +23,7 @@ while (currentMonth != var_month){
 		
 		WebUI.click(findTestObject('Commons/Athlete Calendar/button_Next'))
 		
-		Thread.sleep(500)
+		WebUI.delay(1)
 		
 	}
 	
@@ -31,10 +31,12 @@ while (currentMonth != var_month){
 		
 		WebUI.click(findTestObject('Commons/Athlete Calendar/button_Previous'))
 		
-		Thread.sleep(500)
+		WebUI.delay(1)
 		
 	}
 	
 	currentMonth = CustomKeywords.'com.bridgeathletic.convert.convertMonthFromStringToInteger'(WebUI.getText(findTestObject('Commons/Program Calendar Popup/header_Current Date')).split(' ')[0], 'MMMM')
 	
 }
+
+WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])

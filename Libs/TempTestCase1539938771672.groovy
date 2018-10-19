@@ -15,7 +15,7 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.m
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\VuNA\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Test\\20181018_164911\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\VuNA\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Test\\20181019_154611\\execution.properties')
 
 TestCaseMain.beforeStart()
 
@@ -70,11 +70,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.switchToWindowIndex(1)
+WebUI.switchToWindowIndex(0)
 
 List<Integer> testList = []
 
-testList = CustomKeywords.'com.bridgeathletic.convert.convertFromDateStringToDateList'('OCT 15, 2018', 'MMM dd, yyyy')
+testList = CustomKeywords.'com.bridgeathletic.convert.convertFromDateStringToDateList'('aug 21, 2018', 'MMM dd, yyyy')
 
 println(testList)
 

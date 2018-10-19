@@ -33,8 +33,6 @@ import WebUiBuiltInKeywords as WebUI
 
 public class convert {
 
-	WebDriver driver = DriverFactory.getWebDriver()
-
 	@Keyword
 	def convertFromDate(String currentDate, String formatCurrentDate, String formatExpectDate, int convertDate, String dateType){
 
@@ -108,29 +106,27 @@ public class convert {
 
 		return newMonth
 	}
-	
+
 	@Keyword
 	def convertFromDateStringToDateList (String date, String format){
-		
+
 		List<Integer> dateList = []
-		
+
 		String dateString = convertFormatDate(date, format, 'dd/MM/yyyy')
-		
+
 		List<String> dateStringList = dateString.split('/')
-		
+
 		println dateStringList
-		
+
 		for (int i = 0; i < dateStringList.size(); i = i + 1) {
-			
+
 			println i
-			
+
 			dateList.add(Integer.parseInt(dateStringList[i]))
-			
+
 			println dateList
-			
 		}
-		
+
 		return dateList
-		
 	}
 }

@@ -15,7 +15,7 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.m
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\VuNA\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Doing\\Block Management\\AddBlock-CreateExerciseFromSearch\\20181018_164714\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\VuNA\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Doing\\Block Management\\AddBlock-CreateExerciseFromSearch\\20181019_153753\\execution.properties')
 
 TestCaseMain.beforeStart()
 

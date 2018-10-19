@@ -15,7 +15,7 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.m
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\VuNA\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Test\\20181018_164925\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\VuNA\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Test\\20181019_163830\\execution.properties')
 
 TestCaseMain.beforeStart()
 
@@ -74,12 +74,16 @@ WebUI.switchToWindowIndex(0)
 
 List<Integer> testList = []
 
-testList = CustomKeywords.'com.bridgeathletic.convert.convertFromDateStringToDateList'('OCT 15, 2018', 'MMM dd, yyyy')
+testList = CustomKeywords.'com.bridgeathletic.convert.convertFromDateStringToDateList'('aug 21, 2018', 'MMM dd, yyyy')
 
 println(testList)
 
-WebUI.callTestCase(findTestCase('Done/Commons/Select Date In Calendar/Athlete Calendar/Select Date In Athlete Calendar'), 
+TestObject currentDay = WebUI.callTestCase(findTestCase('Done/Commons/Select Date In Calendar/Athlete Calendar/Select Date In Athlete Calendar'), 
     [('var_day') : testList[0], ('var_month') : testList[1], ('var_year') : testList[2]])
+
+WebUI.delay(3)
+
+CustomKeywords.'com.bridgeathletic.click.clickPositionObject'(currentDay)
 
 ''', 'Test Cases/Test', new TestCaseBinding('Test Cases/Test',[:]), FailureHandling.STOP_ON_FAILURE , false)
     

@@ -13,6 +13,8 @@ import com.bridgeathletic.workout
 
 import java.util.ArrayList
 
+import com.kms.katalon.core.testobject.TestObject
+
 import com.bridgeathletic.phase
 
 
@@ -430,6 +432,12 @@ def static "com.bridgeathletic.random.selectRandomWeek"() {
 
 def static "com.bridgeathletic.random.selectRandomNewBlock"() {
     (new com.bridgeathletic.random()).selectRandomNewBlock()
+}
+
+def static "com.bridgeathletic.click.clickPositionObject"(
+    	TestObject to	) {
+    (new com.bridgeathletic.click()).clickPositionObject(
+        	to)
 }
 
 def static "com.bridgeathletic.phase.printPhaseInfo"(
