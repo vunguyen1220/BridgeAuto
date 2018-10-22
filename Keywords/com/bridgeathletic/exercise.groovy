@@ -68,6 +68,13 @@ public class exercise {
 
 		return exerciseInfo
 	}
+	
+	@Keyword
+	def getExerciseInfoInCalendar (String blockName, int exerciseIndex){
+		
+		
+		
+	}
 
 	@Keyword
 	def addNewExerciseFromBlockName (String blockName, String exerciseName){
@@ -106,28 +113,25 @@ public class exercise {
 			WebUI.click(findTestObject('Phase Builder Page/Choose Exercise Popup/button_Create New Exercise'))
 
 			WebUI.click(findTestObject('Phase Builder Page/Choose Exercise Popup/button_Yes'))
-
 		}
-		
+
 		WebUI.click(findTestObject('Phase Builder Page/Choose Exercise Popup/button_Insert'))
-		
+
 		WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
-		
 	}
-	
+
 	@Keyword
 	def selectExerciseFromName (String blockName, String exerciseName){
-		
+
 		String exerciseNameText = '//header[@class = "block-name draggable"]/span[. = "'+ blockName +'"]//ancestor::div[contains(@class, "block ng-scope")]//header[@class = "exercise ng-scope"]//span[. = "'+ exerciseName +'"]'
-		
+
 		TestObject exerciseNameObject = new TestObject()
-		
+
 		exerciseNameObject.addProperty('xpath', ConditionType.EQUALS, exerciseNameText, true)
-		
+
 		WebUI.click(exerciseNameObject)
-		
+
 		WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
-		
 	}
 
 	@Keyword
