@@ -58,7 +58,7 @@ WebUI.click(findTestObject('Content Manager Page/Left Panel/strong_Programs'))
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-CustomKeywords.'com.bridgeathletic.select.selectProgramGroup'('All Programs', 'Unassigned')
+CustomKeywords.'bridgeathletic.select.selectProgramGroup'('All Programs', 'Unassigned')
 
 WebUI.verifyElementPresent(findTestObject('Content Manager Page/Left Panel/strong_Team'), 2, FailureHandling.STOP_ON_FAILURE)
 
@@ -66,12 +66,12 @@ WebUI.click(findTestObject('Content Manager Page/Left Panel/strong_Team'))
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-List<String> allPrograms = CustomKeywords.'com.bridgeathletic.total.getAllProgram'()
+List<String> allPrograms = CustomKeywords.'bridgeathletic.total.getAllProgram'()
 
 int phaseNumbers = 0
 
 while (phaseNumbers == 0) {
-	TestObject randomProgram = CustomKeywords.'com.bridgeathletic.random.getRandomProgram'(allPrograms)
+	TestObject randomProgram = CustomKeywords.'bridgeathletic.random.getRandomProgram'(allPrograms)
 
 	while (WebUI.waitForElementVisible(randomProgram, 2, FailureHandling.OPTIONAL) == false) {
 		WebUI.click(findTestObject('Commons/div_sub-title_left'))
@@ -88,5 +88,5 @@ while (phaseNumbers == 0) {
 	System.out.println('Phase Numbers of Program: ' + phaseNumbers)
 }
 
-Object programInfo = CustomKeywords.'com.bridgeathletic.info.getProgramInfo'()
+Object programInfo = CustomKeywords.'bridgeathletic.info.getProgramInfo'()
 

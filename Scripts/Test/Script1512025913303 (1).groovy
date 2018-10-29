@@ -54,7 +54,7 @@ WebUI.switchToWindowIndex(0)
 
 List<Integer> testList = []
 
-testList = CustomKeywords.'com.bridgeathletic.convert.convertFromDateStringToDateList'('sep 1, 2018', 'MMM dd, yyyy')
+testList = CustomKeywords.'bridgeathletic.convert.convertFromDateStringToDateList'('sep 1, 2018', 'MMM dd, yyyy')
 
 println testList
 

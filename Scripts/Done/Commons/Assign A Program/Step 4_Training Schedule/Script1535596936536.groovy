@@ -23,7 +23,7 @@ WebUI.waitForElementPresent(findTestObject('Program Assignment Popup/header_Trai
 
 int dayNumbers = Integer.parseInt(WebUI.getText(findTestObject('Program Assignment Popup/text_Training Days')).substring(7, 8))
 
-CustomKeywords.'com.bridgeathletic.random.selectRandomDay'(dayNumbers)
+CustomKeywords.'bridgeathletic.random.selectRandomDay'(dayNumbers)
 
 WebUI.callTestCase(findTestCase('Done/Commons/Select Date In Calendar/Program Calendar/Select Date In Assign Calendar'), [:])
 

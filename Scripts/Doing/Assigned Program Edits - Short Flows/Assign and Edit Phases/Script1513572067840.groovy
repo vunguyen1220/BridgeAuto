@@ -54,15 +54,15 @@ WebUI.click(findTestObject('Assigned Program Edits - Short Flows/Assign and Edit
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-CustomKeywords.'com.bridgeathletic.select.selectProgramGroup'('All Programs', 'Unassigned')
+CustomKeywords.'bridgeathletic.select.selectProgramGroup'('All Programs', 'Unassigned')
 
 WebUI.click(findTestObject('Assigned Program Edits - Short Flows/Assign and Edit Phases/strong_Swimming'))
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-ArrayList<String> allProgram = CustomKeywords.'com.bridgeathletic.total.getAllProgram'()
+ArrayList<String> allProgram = CustomKeywords.'bridgeathletic.total.getAllProgram'()
 
-TestObject randomProgram = CustomKeywords.'com.bridgeathletic.random.getRandomProgram'(allProgram)
+TestObject randomProgram = CustomKeywords.'bridgeathletic.random.getRandomProgram'(allProgram)
 
 while (WebUI.waitForElementVisible(randomProgram, 2, FailureHandling.OPTIONAL) == false) {
 	WebUI.click(findTestObject('Commons/div_sub-title_left'))
@@ -106,18 +106,18 @@ WebUI.click(findTestObject('Assigned Program Edits - Short Flows/Assign and Edit
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-CustomKeywords.'com.bridgeathletic.select.selectProgramGroup'('All Programs', 'Unassigned')
+CustomKeywords.'bridgeathletic.select.selectProgramGroup'('All Programs', 'Unassigned')
 
 WebUI.click(findTestObject('Assigned Program Edits - Short Flows/Assign and Edit Phases/strong_No Team'))
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-allProgram = CustomKeywords.'com.bridgeathletic.total.getAllProgram'()
+allProgram = CustomKeywords.'bridgeathletic.total.getAllProgram'()
 
 int phaseNumbers = 0
 
 while (phaseNumbers <= 2) {
-	randomProgram = CustomKeywords.'com.bridgeathletic.random.getRandomProgram'(allProgram)
+	randomProgram = CustomKeywords.'bridgeathletic.random.getRandomProgram'(allProgram)
 
 	while (WebUI.waitForElementVisible(randomProgram, 2, FailureHandling.OPTIONAL) == false) {
 		WebUI.click(findTestObject('Commons/div_sub-title_left'))
@@ -142,11 +142,11 @@ for (int i = 1; i <= 2; i = i + 1) {
 	phaseNumbers = Integer.parseInt(WebUI.getText(findTestObject('Template Blocks/Builder-Add Template Block/h2_phase_number')).substring(
 			0, 1))
 
-	int randomPhase = CustomKeywords.'com.bridgeathletic.random.getRandomNumber'(phaseNumbers)
+	int randomPhase = CustomKeywords.'bridgeathletic.random.getRandomNumber'(phaseNumbers)
 
 	Object phaseInfo = phaseInfo
 
-	phaseInfo = CustomKeywords.'com.bridgeathletic.info.getPhaseInfo'(randomPhase)
+	phaseInfo = CustomKeywords.'bridgeathletic.info.getPhaseInfo'(randomPhase)
 
 	WebUI.click(phaseInfo.dotPhase)
 

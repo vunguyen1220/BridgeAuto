@@ -148,7 +148,7 @@ def getEvent1() {
 
 def getEvent2() {
 
-	int randomNumber = CustomKeywords.'com.bridgeathletic.random.getRandomNumber'(14)
+	int randomNumber = CustomKeywords.'bridgeathletic.random.getRandomNumber'(14)
 
 	Calendar cal = Calendar.getInstance()
 

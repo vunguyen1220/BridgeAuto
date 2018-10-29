@@ -56,13 +56,13 @@ WebUI.click(findTestObject('Org Home Page/span_TEAMS'))
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
 'Get all teams'
-int totalTeamNumbers = CustomKeywords.'com.bridgeathletic.total.getItemSize'('//md-list[1]/md-item[contains(@class,"ng-scope")]/md-item-content')
+int totalTeamNumbers = CustomKeywords.'bridgeathletic.total.getItemSize'('//md-list[1]/md-item[contains(@class,"ng-scope")]/md-item-content')
 
 'Locate your team (a team with an active program)'
 Object randomTeam = teamInfo
 
 for (int i = 1; i <= totalTeamNumbers; i = (i + 1)) {
-    randomTeam = CustomKeywords.'com.bridgeathletic.info.getTeamInfo'(i)
+    randomTeam = CustomKeywords.'bridgeathletic.info.getTeamInfo'(i)
 
     if ((randomTeam.athleteNumbers > 0) && (randomTeam.activeProgramNumbers > 0)) {
         break
@@ -164,7 +164,7 @@ for (int i = 0; i <= 3; i = (i + 1)) {
     List<Integer> teamRosterAttendanceInfo = []
 
     for (int j = 1; j <= randomTeam.athleteNumbers; j = (j + 1)) {
-        teamRosterAttendanceInfo.add(CustomKeywords.'com.bridgeathletic.info.getAttendanceInfo'(j))
+        teamRosterAttendanceInfo.add(CustomKeywords.'bridgeathletic.info.getAttendanceInfo'(j))
 
         if (j == 5) {
             break
@@ -180,7 +180,7 @@ for (int i = 0; i <= 3; i = (i + 1)) {
     List<Integer> teamAttendanceInfo = []
 
     for (int j = 1; j <= randomTeam.athleteNumbers; j = (j + 1)) {
-        teamAttendanceInfo.add(CustomKeywords.'com.bridgeathletic.info.getAttendanceInfo'(j))
+        teamAttendanceInfo.add(CustomKeywords.'bridgeathletic.info.getAttendanceInfo'(j))
 
         if (j == 5) {
             break

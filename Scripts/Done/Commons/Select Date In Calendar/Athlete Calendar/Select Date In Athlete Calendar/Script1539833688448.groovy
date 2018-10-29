@@ -58,6 +58,6 @@ else {
 
 }
 
-CustomKeywords.'com.bridgeathletic.click.clickDateObjectFromXpath'('//div[@class="fc-content"]//td[@data-date="'+ day +'"]')
+CustomKeywords.'bridgeathletic.click.clickDateObjectFromXpath'('//div[@class="fc-content"]//td[@data-date="'+ day +'"]')
 
 

@@ -42,12 +42,12 @@ WebUI.click(findTestObject('Org Home Page/span_TEAMS'))
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-int totalTeamNumbers = CustomKeywords.'com.bridgeathletic.total.getItemSize'('//md-list[1]/md-item[contains(@class,"ng-scope")]/md-item-content')
+int totalTeamNumbers = CustomKeywords.'bridgeathletic.total.getItemSize'('//md-list[1]/md-item[contains(@class,"ng-scope")]/md-item-content')
 
 Object randomTeam = teamInfo
 
 for (int i = 1; i <= totalTeamNumbers; i = (i + 1)) {
-    randomTeam = CustomKeywords.'com.bridgeathletic.info.getTeamInfo'(i)
+    randomTeam = CustomKeywords.'bridgeathletic.info.getTeamInfo'(i)
 
     if ((randomTeam.athleteNumbers > 1) && (randomTeam.athleteNumbers <= 5)) {
         break
@@ -76,7 +76,7 @@ WebUI.setText(findTestObject('New Test Page/input_search-text'), 'Squat')
 
 WebUI.delay(2)
 
-int exerciseNumbers = CustomKeywords.'com.bridgeathletic.total.getItemSize'('id("exercise-switch-new")//div[@ng-repeat="ex in exerciseCollection.organizationExercise track by $index"]')
+int exerciseNumbers = CustomKeywords.'bridgeathletic.total.getItemSize'('id("exercise-switch-new")//div[@ng-repeat="ex in exerciseCollection.organizationExercise track by $index"]')
 
 for (int i = 1; i <= exerciseNumbers; i = (i + 1)) {
     TestObject exerciseItem = new TestObject()

@@ -21,19 +21,19 @@ import internal.GlobalVariable as GlobalVariable
 
 if (var_byCreator != ''){
 	
-	CustomKeywords.'com.bridgeathletic.program.filterProgramsByCreator'(var_byCreator)
+	CustomKeywords.'bridgeathletic.program.filterProgramsByCreator'(var_byCreator)
 	
 }
 
 if (var_byTeam != ''){
 	
-	CustomKeywords.'com.bridgeathletic.program.filterProgramsByTeam'(var_byTeam)
+	CustomKeywords.'bridgeathletic.program.filterProgramsByTeam'(var_byTeam)
 	
 }
 
 if (var_byType.size() > 0){
 	
-	CustomKeywords.'com.bridgeathletic.program.filterProgramsByType'(var_byType)
+	CustomKeywords.'bridgeathletic.program.filterProgramsByType'(var_byType)
 	
 }
 

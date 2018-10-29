@@ -30,7 +30,7 @@ if (WebUI.verifyElementPresent(findTestObject('Program Assignment Popup/header_S
 			
 			WebUI.waitForElementNotPresent(findTestObject('Program Assignment Popup/img_spin'), 30)
 			
-			int rd = CustomKeywords.'com.bridgeathletic.random.getRandomNumber'(CustomKeywords.'com.bridgeathletic.total.getItemSize'('//div[@class = "items name ng-scope"]'))
+			int rd = CustomKeywords.'bridgeathletic.random.getRandomNumber'(CustomKeywords.'bridgeathletic.total.getItemSize'('//div[@class = "items name ng-scope"]'))
 			
 			TestObject randomProgramObject = new TestObject()
 			

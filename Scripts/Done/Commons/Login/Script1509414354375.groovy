@@ -47,7 +47,7 @@ WebUI.click(findTestObject('Login Page/button_LOGIN'))
 
 WebUI.waitForElementPresent(findTestObject('Header/div_User Details'), 30)
 
-if (CustomKeywords.'com.bridgeathletic.total.getItemSize'('//button[@class="md-raised md-button md-default-theme"]') > 0){
+if (CustomKeywords.'bridgeathletic.total.getItemSize'('//button[@class="md-raised md-button md-default-theme"]') > 0){
 
 	TestObject reloadObject = new TestObject()
 

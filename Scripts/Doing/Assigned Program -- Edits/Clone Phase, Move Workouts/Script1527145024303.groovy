@@ -50,9 +50,9 @@ WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
 List<Integer> programType = [2]
 
-CustomKeywords.'com.bridgeathletic.select.selectProgramType'(programType)
+CustomKeywords.'bridgeathletic.select.selectProgramType'(programType)
 
-int totalProgramNumbers = CustomKeywords.'com.bridgeathletic.program.getTotalProgramNumbers'()
+int totalProgramNumbers = CustomKeywords.'bridgeathletic.program.getTotalProgramNumbers'()
 
 int memberNumbers = 0
 
@@ -68,7 +68,7 @@ while (memberNumbers < 20 || flag == false) {
 
 	Object tmpProgramInfoInList = new program()
 
-	tmpProgramInfoInList = CustomKeywords.'com.bridgeathletic.program.getProgramInfoInLibrary'(tmp)
+	tmpProgramInfoInList = CustomKeywords.'bridgeathletic.program.getProgramInfoInLibrary'(tmp)
 
 	TestObject programSelectObject = new TestObject()
 
@@ -80,19 +80,19 @@ while (memberNumbers < 20 || flag == false) {
 
 	Object tmpAssignedProgramInfo = new program()
 
-	tmpAssignedProgramInfo = CustomKeywords.'com.bridgeathletic.program.getAssignedProgramInfoInDetail'()
+	tmpAssignedProgramInfo = CustomKeywords.'bridgeathletic.program.getAssignedProgramInfoInDetail'()
 
 	if (tmpAssignedProgramInfo.memberNumbers > 20){
 
 		for (int i = 1; i <= tmpAssignedProgramInfo.phaseNumbers; i = i + 1){
 
-			tmpAssignedProgramInfo.phaseList.add(CustomKeywords.'com.bridgeathletic.phase.getPhaseInfoInDetail'(i))
+			tmpAssignedProgramInfo.phaseList.add(CustomKeywords.'bridgeathletic.phase.getPhaseInfoInDetail'(i))
 
 		}
 
 	}
 
-	selectedProgramInfo = CustomKeywords.'com.bridgeathletic.program.updateProgramInfo'(tmpAssignedProgramInfo, tmpProgramInfoInList)
+	selectedProgramInfo = CustomKeywords.'bridgeathletic.program.updateProgramInfo'(tmpAssignedProgramInfo, tmpProgramInfoInList)
 
 	WebUI.click(findTestObject('Breadcrumbs/button_Programs'))
 
@@ -110,7 +110,7 @@ while (memberNumbers < 20 || flag == false) {
 
 }
 
-CustomKeywords.'com.bridgeathletic.program.printProgramInfo'(selectedProgramInfo)
+CustomKeywords.'bridgeathletic.program.printProgramInfo'(selectedProgramInfo)
 
 WebUI.click(findTestObject('Breadcrumbs/button_Home'))
 
@@ -138,17 +138,17 @@ WebUI.click(findTestObject('Roster Page/a_Coaches'))
 
 WebUI.delay(2)
 
-int totalMembers = CustomKeywords.'com.bridgeathletic.total.getItemSize'('//li[contains(@class,"team-roster-item ng-scope")]')
+int totalMembers = CustomKeywords.'bridgeathletic.total.getItemSize'('//li[contains(@class,"team-roster-item ng-scope")]')
 
 List<user> userList = []
 
 for (int i = 1; i <= totalMembers; i = i + 1){
 
-	userList.add(CustomKeywords.'com.bridgeathletic.user.getUserInfo'(i))
+	userList.add(CustomKeywords.'bridgeathletic.user.getUserInfo'(i))
 
 }
 
-int rd = CustomKeywords.'com.bridgeathletic.random.getRandomNumber'(userList.size() - 1)
+int rd = CustomKeywords.'bridgeathletic.random.getRandomNumber'(userList.size() - 1)
 
 WebUI.callTestCase(findTestCase('Done/Commons/Logout'), [:])
 
@@ -160,7 +160,7 @@ WebUI.click(findTestObject('Org Home Page/span_LIBRARY'))
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-CustomKeywords.'com.bridgeathletic.select.selectProgramType'(programType)
+CustomKeywords.'bridgeathletic.select.selectProgramType'(programType)
 
 TestObject programSelectObject = new TestObject()
 
@@ -170,13 +170,13 @@ WebUI.click(programSelectObject)
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-TestObject treeDotCurrentPhaseObject = CustomKeywords.'com.bridgeathletic.phase.getTreeDotPhaseObjectByName'(selectedProgramInfo.currentPhase)
+TestObject treeDotCurrentPhaseObject = CustomKeywords.'bridgeathletic.phase.getTreeDotPhaseObjectByName'(selectedProgramInfo.currentPhase)
 
 WebUI.click(treeDotCurrentPhaseObject)
 
 WebUI.click(findTestObject('A Program Page/li_Edit NameNote'))
 
-String randomText = CustomKeywords.'com.bridgeathletic.random.getRandomName'('Current Phase ')
+String randomText = CustomKeywords.'bridgeathletic.random.getRandomName'('Current Phase ')
 
 WebUI.setText(findTestObject('A Program Page/input_phase-name'), randomText)
 
@@ -194,9 +194,9 @@ if (WebUI.verifyElementPresent(findTestObject('A Program Page/md-dialog_first-ch
 
 selectedProgramInfo.currentPhase = randomText
 
-selectedProgramInfo.phaseList = CustomKeywords.'com.bridgeathletic.phase.getPhaseList'(selectedProgramInfo.phaseNumbers)
+selectedProgramInfo.phaseList = CustomKeywords.'bridgeathletic.phase.getPhaseList'(selectedProgramInfo.phaseNumbers)
 
-treeDotCurrentPhaseObject = CustomKeywords.'com.bridgeathletic.phase.getTreeDotPhaseObjectByName'(selectedProgramInfo.currentPhase)
+treeDotCurrentPhaseObject = CustomKeywords.'bridgeathletic.phase.getTreeDotPhaseObjectByName'(selectedProgramInfo.currentPhase)
 
 WebUI.click(treeDotCurrentPhaseObject)
 
@@ -206,15 +206,15 @@ WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
 selectedProgramInfo.phaseNumbers = selectedProgramInfo.phaseNumbers + 1
 
-selectedProgramInfo.phaseList = CustomKeywords.'com.bridgeathletic.phase.getPhaseList'(selectedProgramInfo.phaseNumbers)
+selectedProgramInfo.phaseList = CustomKeywords.'bridgeathletic.phase.getPhaseList'(selectedProgramInfo.phaseNumbers)
 
-TestObject treeDotLastPhaseObject = CustomKeywords.'com.bridgeathletic.phase.getTreeDotPhaseObjectByName'(selectedProgramInfo.phaseList[selectedProgramInfo.phaseNumbers - 1].phaseName)
+TestObject treeDotLastPhaseObject = CustomKeywords.'bridgeathletic.phase.getTreeDotPhaseObjectByName'(selectedProgramInfo.phaseList[selectedProgramInfo.phaseNumbers - 1].phaseName)
 
 WebUI.click(treeDotLastPhaseObject)
 
 WebUI.click(findTestObject('A Program Page/li_Edit NameNote'))
 
-randomText = CustomKeywords.'com.bridgeathletic.random.getRandomName'('New Phase ')
+randomText = CustomKeywords.'bridgeathletic.random.getRandomName'('New Phase ')
 
 WebUI.setText(findTestObject('A Program Page/input_phase-name'), randomText)
 
@@ -222,9 +222,9 @@ WebUI.click(findTestObject('A Program Page/i_icon-update-phase'))
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-selectedProgramInfo.phaseList = CustomKeywords.'com.bridgeathletic.phase.getPhaseList'(selectedProgramInfo.phaseNumbers)
+selectedProgramInfo.phaseList = CustomKeywords.'bridgeathletic.phase.getPhaseList'(selectedProgramInfo.phaseNumbers)
 
-TestObject editLastPhaseObject = CustomKeywords.'com.bridgeathletic.phase.getEditPhaseObjectByIndex'(selectedProgramInfo.phaseNumbers)
+TestObject editLastPhaseObject = CustomKeywords.'bridgeathletic.phase.getEditPhaseObjectByIndex'(selectedProgramInfo.phaseNumbers)
 
 WebUI.click(editLastPhaseObject)
 
@@ -234,29 +234,29 @@ WebUI.click(findTestObject('A Program page/button_Deliver'))
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-List<workout> workoutList = CustomKeywords.'com.bridgeathletic.workout.getWorkoutListInWeek'(1)
+List<workout> workoutList = CustomKeywords.'bridgeathletic.workout.getWorkoutListInWeek'(1)
 
 while(workoutList.size() < 3){
 
-	rd = CustomKeywords.'com.bridgeathletic.random.getRandomNumber'(workoutList.size())
+	rd = CustomKeywords.'bridgeathletic.random.getRandomNumber'(workoutList.size())
 
-	CustomKeywords.'com.bridgeathletic.workout.clickCloneWorkoutButtonByIndex'(1, rd)
+	CustomKeywords.'bridgeathletic.workout.clickCloneWorkoutButtonByIndex'(1, rd)
 
 	WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 	
-	workoutList = CustomKeywords.'com.bridgeathletic.workout.getWorkoutListInWeek'(1)
+	workoutList = CustomKeywords.'bridgeathletic.workout.getWorkoutListInWeek'(1)
 
 }
 
-CustomKeywords.'com.bridgeathletic.workout.moveWorkout'(1, 1, 1, 2)
+CustomKeywords.'bridgeathletic.workout.moveWorkout'(1, 1, 1, 2)
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-CustomKeywords.'com.bridgeathletic.workout.moveWorkout'(1, 2, 1, 3)
+CustomKeywords.'bridgeathletic.workout.moveWorkout'(1, 2, 1, 3)
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-workoutList = CustomKeywords.'com.bridgeathletic.workout.getWorkoutListInWeek'(1)
+workoutList = CustomKeywords.'bridgeathletic.workout.getWorkoutListInWeek'(1)
 
 String a = "window.open('http://stg.bridgeathletic.com', '');"
 
@@ -282,7 +282,7 @@ WebUI.click(findTestObject('Team Home Page/span_See All_Roster-module'))
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-rd = CustomKeywords.'com.bridgeathletic.random.getRandomNumber'(selectedProgramInfo.memberNumbers)
+rd = CustomKeywords.'bridgeathletic.random.getRandomNumber'(selectedProgramInfo.memberNumbers)
 
 TestObject randomAthlete  = new TestObject()
 

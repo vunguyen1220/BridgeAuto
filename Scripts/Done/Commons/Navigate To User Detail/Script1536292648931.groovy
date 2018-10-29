@@ -15,7 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 
-if (CustomKeywords.'com.bridgeathletic.total.getItemSize'('//span[@ui-sref = "user.organizations.members.home"]') == 0){
+if (CustomKeywords.'bridgeathletic.total.getItemSize'('//span[@ui-sref = "user.organizations.members.home"]') == 0){
 	
 	WebUI.click(findTestObject('Breadcrumbs/button_Home'))
 	

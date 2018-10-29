@@ -58,12 +58,12 @@ WebUI.click(findTestObject('Org Home Page/span_TEAMS'))
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
 'Find a team with athletes'
-int totalTeamNumbers = CustomKeywords.'com.bridgeathletic.total.getItemSize'('//md-list[1]/md-item[contains(@class,"ng-scope")]/md-item-content')
+int totalTeamNumbers = CustomKeywords.'bridgeathletic.total.getItemSize'('//md-list[1]/md-item[contains(@class,"ng-scope")]/md-item-content')
 
 Object randomTeam = teamInfo
 
 for (int i = 1; i <= totalTeamNumbers; i = (i + 1)) {
-    randomTeam = CustomKeywords.'com.bridgeathletic.info.getTeamInfo'(i)
+    randomTeam = CustomKeywords.'bridgeathletic.info.getTeamInfo'(i)
 
     if (randomTeam.athleteNumbers >= 2) {
         break
@@ -100,7 +100,7 @@ Using the apply all functionality, select and use the same importance for all th
 Change the importance for some athletes
 Save the event*/
 for (int tmp = 1; tmp <= 2; tmp = (tmp + 1)) {
-    String randomName = CustomKeywords.'com.bridgeathletic.random.getRandomName'(' ')
+    String randomName = CustomKeywords.'bridgeathletic.random.getRandomName'(' ')
 
     WebUI.click(findTestObject('Team Home Page/button_team-competitions-add-new'))
 
@@ -120,11 +120,11 @@ for (int tmp = 1; tmp <= 2; tmp = (tmp + 1)) {
 
     WebUI.waitForElementPresent(findTestObject('Team Home Page/custom-select_new-competition-importance'), 30, FailureHandling.STOP_ON_FAILURE)
 
-    int randomImportanceLevel = CustomKeywords.'com.bridgeathletic.random.getRandomNumber'(5)
+    int randomImportanceLevel = CustomKeywords.'bridgeathletic.random.getRandomNumber'(5)
 
     for (int i = 1; i <= randomTeam.athleteNumbers; i = (i + 1)) {
         if (tmp == 2) {
-            randomImportanceLevel = CustomKeywords.'com.bridgeathletic.random.getRandomNumber'(5)
+            randomImportanceLevel = CustomKeywords.'bridgeathletic.random.getRandomNumber'(5)
         }
         
         TestObject importanceLevel = new TestObject()
@@ -157,7 +157,7 @@ WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
 List<Integer> eventList = []
 
-int totalEventNumbers = CustomKeywords.'com.bridgeathletic.total.getItemSize'('//div[@class = "competition-item ng-scope"]')
+int totalEventNumbers = CustomKeywords.'bridgeathletic.total.getItemSize'('//div[@class = "competition-item ng-scope"]')
 
 for (int i = 1; i <= totalEventNumbers; i = (i + 1)) {
     TestObject toggleButton = new TestObject()
@@ -168,7 +168,7 @@ for (int i = 1; i <= totalEventNumbers; i = (i + 1)) {
 
     Object eventItemInfo = eventInfo
 
-    eventItemInfo = CustomKeywords.'com.bridgeathletic.info.getEventInfo'(i)
+    eventItemInfo = CustomKeywords.'bridgeathletic.info.getEventInfo'(i)
 
     if (expectEventName.contains(eventItemInfo.eventName)) {
         eventList.add(eventItemInfo)
@@ -182,7 +182,7 @@ Make sure the events are displayed on the profile page >> events module
 Make sure the events are displayed on the profile page >> calendar module
 Hover of the event on the calendar >> the name of the event should be displayed*/
 for (int i = 0; i < eventList.size(); i = (i + 1)) {
-    int randomNumber = CustomKeywords.'com.bridgeathletic.random.getRandomNumber'(eventList[i].athleteNumbers) - 1
+    int randomNumber = CustomKeywords.'bridgeathletic.random.getRandomNumber'(eventList[i].athleteNumbers) - 1
 
     WebUI.click(findTestObject('Breadcrumbs/span_select-team'))
 
@@ -269,7 +269,7 @@ WebUI.click(eventList[1].editButton)
 
 WebUI.click(findTestObject('Events Page/button_importances_edit'))
 
-int randomLevel = CustomKeywords.'com.bridgeathletic.random.getRandomNumber'(4)
+int randomLevel = CustomKeywords.'bridgeathletic.random.getRandomNumber'(4)
 
 TestObject randomLevelObject = new TestObject()
 
@@ -322,7 +322,7 @@ for (int i = 1; i <= totalEventNumbers; i = (i + 1)) {
 
     Object eventItemInfo = eventInfo
 
-    eventItemInfo = CustomKeywords.'com.bridgeathletic.info.getEventInfo'(i)
+    eventItemInfo = CustomKeywords.'bridgeathletic.info.getEventInfo'(i)
 
     'Open the events module, select on Test Event 2'
 
@@ -392,7 +392,7 @@ WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
 WebUI.waitForElementPresent(findTestObject('Athlete Profile Page/div_fc-content-calendar'), 30)
 
-totalEventNumbers = CustomKeywords.'com.bridgeathletic.total.getItemSize'('//strong[@class="name ng-binding"]')
+totalEventNumbers = CustomKeywords.'bridgeathletic.total.getItemSize'('//strong[@class="name ng-binding"]')
 
 tmp = 1
 

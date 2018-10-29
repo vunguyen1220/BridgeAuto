@@ -46,7 +46,7 @@ WebUI.click(findTestObject('Org Home Page/span_TEAMS'))
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-int totalTeamNumbers = CustomKeywords.'com.bridgeathletic.total.getItemSize'('//md-list[1]/md-item[contains(@class,"ng-scope")]/md-item-content')
+int totalTeamNumbers = CustomKeywords.'bridgeathletic.total.getItemSize'('//md-list[1]/md-item[contains(@class,"ng-scope")]/md-item-content')
 
 List<teamInfo> teamList = []
 
@@ -54,7 +54,7 @@ for (int i = 1; i <= totalTeamNumbers; i = (i + 1)) {
 	
 	Object teamInfo = teamInfo
 	
-	teamInfo = CustomKeywords.'com.bridgeathletic.info.getTeamInfo'(i)
+	teamInfo = CustomKeywords.'bridgeathletic.info.getTeamInfo'(i)
 
 	if ((teamInfo.athleteNumbers >= 2) && (teamInfo.athleteNumbers <= 5)) {
 		
@@ -64,7 +64,7 @@ for (int i = 1; i <= totalTeamNumbers; i = (i + 1)) {
 	
 }
 
-int rd = CustomKeywords.'com.bridgeathletic.random.getRandomNumber'(teamList.size() - 1)
+int rd = CustomKeywords.'bridgeathletic.random.getRandomNumber'(teamList.size() - 1)
 
 TestObject teamName = new TestObject()
 
@@ -160,11 +160,11 @@ for (int i = 0; i < testDateList.size(); i = i + 1){
 
 	float parameterValue = 5
 
-	String testDate = CustomKeywords.'com.bridgeathletic.convert.convertFromDate'(null, null, 'MMddyyyy', testDateList[i], 'Month')
+	String testDate = CustomKeywords.'bridgeathletic.convert.convertFromDate'(null, null, 'MMddyyyy', testDateList[i], 'Month')
 
 	WebUI.sendKeys(findTestObject('New Test Page/input_testDate'), testDate)
 
-	testDate = CustomKeywords.'com.bridgeathletic.convert.convertFormatDate'(testDate, 'MMddyyyy', 'MM/dd/yy')
+	testDate = CustomKeywords.'bridgeathletic.convert.convertFormatDate'(testDate, 'MMddyyyy', 'MM/dd/yy')
 	
 	WebUI.click(findTestObject('New Test Page/button_Continue'))
 
@@ -184,7 +184,7 @@ for (int i = 0; i < testDateList.size(); i = i + 1){
 
 		String athleteName = WebUI.getText(athleteNameObj)
 		
-		float testValue = CustomKeywords.'com.bridgeathletic.random.getRandomNumberIntoRange'(75, 100)
+		float testValue = CustomKeywords.'bridgeathletic.random.getRandomNumberIntoRange'(75, 100)
 
 		WebUI.setText(testValueObj, Float.toString(testValue))
 		
@@ -251,7 +251,7 @@ WebUI.delay(1)
 
 List<testResultInfo> testResultInfoInTeamLeaderList = []
 
-testResultInfoInTeamLeaderList = CustomKeywords.'com.bridgeathletic.info.getTestResultInfoInTeamLeaderModule'()
+testResultInfoInTeamLeaderList = CustomKeywords.'bridgeathletic.info.getTestResultInfoInTeamLeaderModule'()
 
 for (int i = 0; i < testResultInfoInTeamLeaderList.size(); i = i + 1){
 	
@@ -275,7 +275,7 @@ for (int i = 0; i < testResultInfoInTeamLeaderList.size(); i = i + 1){
 	
 }
 
-rd = CustomKeywords.'com.bridgeathletic.random.getRandomNumberIntoRange'(0, testResultList.size() - 1)
+rd = CustomKeywords.'bridgeathletic.random.getRandomNumberIntoRange'(0, testResultList.size() - 1)
 
 List<testResultInfo> testResultInfoAthlete = []
 
@@ -299,10 +299,10 @@ WebUI.click(randomAthleteObj)
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-List<testResultInfo> testResultInfoTable = CustomKeywords.'com.bridgeathletic.info.getTestResultInfoInTestHistoryTable'()
+List<testResultInfo> testResultInfoTable = CustomKeywords.'bridgeathletic.info.getTestResultInfoInTestHistoryTable'()
 
-List<testResultInfo> testResultInfoChart = CustomKeywords.'com.bridgeathletic.info.getTestResultInfoInHighCharts'()
+List<testResultInfo> testResultInfoChart = CustomKeywords.'bridgeathletic.info.getTestResultInfoInHighCharts'()
 
-WebUI.verifyEqual(CustomKeywords.'com.bridgeathletic.testResultInfo.verifyTestResultInfoListContains'(testResultInfoAthlete, testResultInfoTable), true, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyEqual(CustomKeywords.'bridgeathletic.testResultInfo.verifyTestResultInfoListContains'(testResultInfoAthlete, testResultInfoTable), true, FailureHandling.STOP_ON_FAILURE)
 
 

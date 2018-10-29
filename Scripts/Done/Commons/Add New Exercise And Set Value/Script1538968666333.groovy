@@ -14,29 +14,29 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 
-CustomKeywords.'com.bridgeathletic.block.expandBlockFromName'(var_blockName)
+CustomKeywords.'bridgeathletic.block.expandBlockFromName'(var_blockName)
 
-CustomKeywords.'com.bridgeathletic.exercise.addNewExerciseFromBlockName'(var_blockName, var_exerciseName)
+CustomKeywords.'bridgeathletic.exercise.addNewExerciseFromBlockName'(var_blockName, var_exerciseName)
 
-CustomKeywords.'com.bridgeathletic.exercise.selectExerciseFromName'(var_blockName, var_exerciseName)
+CustomKeywords.'bridgeathletic.exercise.selectExerciseFromName'(var_blockName, var_exerciseName)
 
 if (var_paramList == [] && var_paramNumbers > 0){
 	
-	var_paramList = CustomKeywords.'com.bridgeathletic.parameter.getRandomParameterList'(var_paramNumbers)
+	var_paramList = CustomKeywords.'bridgeathletic.parameter.getRandomParameterList'(var_paramNumbers)
 	
 }
 
-CustomKeywords.'com.bridgeathletic.exercise.editParameterNumbers'(var_paramList)
+CustomKeywords.'bridgeathletic.exercise.editParameterNumbers'(var_paramList)
 
-CustomKeywords.'com.bridgeathletic.exercise.editSetNumbers'(var_setNumbers)
+CustomKeywords.'bridgeathletic.exercise.editSetNumbers'(var_setNumbers)
 
 int tmp = 1
 
 while (tmp <= var_setNumbers){
 
-	List<Integer> valueList = CustomKeywords.'com.bridgeathletic.random.getRandomListNumber'(1, 100, var_paramList.size())
+	List<Integer> valueList = CustomKeywords.'bridgeathletic.random.getRandomListNumber'(1, 100, var_paramList.size())
 
-	CustomKeywords.'com.bridgeathletic.set.setValueForSet'(tmp, valueList)
+	CustomKeywords.'bridgeathletic.set.setValueForSet'(tmp, valueList)
 	
 	tmp = tmp + 1
 

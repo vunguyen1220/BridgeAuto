@@ -29,7 +29,7 @@ if (WebUI.verifyElementPresent(findTestObject('Program Assignment Popup/header_S
 
 		while (tmp < var_MemberNumbers){
 
-			int rd = CustomKeywords.'com.bridgeathletic.random.getRandomNumber'(CustomKeywords.'com.bridgeathletic.total.getItemSize'('//div[@class="item team-name"]'))
+			int rd = CustomKeywords.'bridgeathletic.random.getRandomNumber'(CustomKeywords.'bridgeathletic.total.getItemSize'('//div[@class="item team-name"]'))
 
 			TestObject randomTeamObject = new TestObject()
 

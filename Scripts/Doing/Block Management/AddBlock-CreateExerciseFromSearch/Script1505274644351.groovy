@@ -5,11 +5,11 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.concurrent.ThreadLocalRandom as ThreadLocalRandom
 
-import com.bridgeathletic.block
-import com.bridgeathletic.exercise
-import com.bridgeathletic.program
-import com.bridgeathletic.workout
-import com.bridgeathletic.phase
+import bridgeathletic.block
+import bridgeathletic.exercise
+import bridgeathletic.program
+import bridgeathletic.workout
+import bridgeathletic.phase
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
@@ -46,7 +46,7 @@ WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
 WebUI.callTestCase(findTestCase('Done/Commons/Filter Programs'), [var_byTeam:'Swimming', var_byType:['Assigned']])
 
-int totalProgramNumbers = CustomKeywords.'com.bridgeathletic.program.getTotalProgramNumbers'()
+int totalProgramNumbers = CustomKeywords.'bridgeathletic.program.getTotalProgramNumbers'()
 
 int rd
 
@@ -56,13 +56,13 @@ Object selectProgramInfo = new program()
 
 while (flag == false){
 
-	rd = CustomKeywords.'com.bridgeathletic.random.getRandomNumberIntoRange'(1, totalProgramNumbers)
+	rd = CustomKeywords.'bridgeathletic.random.getRandomNumberIntoRange'(1, totalProgramNumbers)
 
-	CustomKeywords.'com.bridgeathletic.program.selectProgramInLibraryByIndex'(rd)
+	CustomKeywords.'bridgeathletic.program.selectProgramInLibraryByIndex'(rd)
 
 	WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-	selectProgramInfo = CustomKeywords.'com.bridgeathletic.program.getAssignedProgramInfoInDetail'()
+	selectProgramInfo = CustomKeywords.'bridgeathletic.program.getAssignedProgramInfoInDetail'()
 
 	if (selectProgramInfo.currentPhase == ''){
 
@@ -90,11 +90,11 @@ WebUI.switchToWindowIndex(0)
 
 Object currentPhase = new phase()
 
-int currentPhaseIndex = CustomKeywords.'com.bridgeathletic.phase.getPhaseIndexByName'(selectProgramInfo.currentPhase)
+int currentPhaseIndex = CustomKeywords.'bridgeathletic.phase.getPhaseIndexByName'(selectProgramInfo.currentPhase)
 
-currentPhase = CustomKeywords.'com.bridgeathletic.phase.getPhaseInfoInDetail'(currentPhaseIndex)
+currentPhase = CustomKeywords.'bridgeathletic.phase.getPhaseInfoInDetail'(currentPhaseIndex)
 
-TestObject editCurrentPhaseObject = CustomKeywords.'com.bridgeathletic.phase.getEditPhaseObjectByName'(selectProgramInfo.currentPhase)
+TestObject editCurrentPhaseObject = CustomKeywords.'bridgeathletic.phase.getEditPhaseObjectByName'(selectProgramInfo.currentPhase)
 
 WebUI.click(editCurrentPhaseObject)
 
@@ -102,9 +102,9 @@ WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
 WebUI.delay(2)
 
-String blockName = CustomKeywords.'com.bridgeathletic.random.getRandomName'('Warmup--New ')
+String blockName = CustomKeywords.'bridgeathletic.random.getRandomName'('Warmup--New ')
 
-CustomKeywords.'com.bridgeathletic.block.addNewBlock'(1, 1, blockName)
+CustomKeywords.'bridgeathletic.block.addNewBlock'(1, 1, blockName)
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
@@ -114,17 +114,17 @@ WebUI.callTestCase(findTestCase('Done/Commons/Add New Exercise And Set Value'), 
 
 List<exercise> exerciseList = []
 
-exerciseList.add(CustomKeywords.'com.bridgeathletic.exercise.getExerciseInfo'())
+exerciseList.add(CustomKeywords.'bridgeathletic.exercise.getExerciseInfo'())
 
 WebUI.callTestCase(findTestCase('Done/Commons/Add New Exercise And Set Value'), [var_exerciseName:'Barbell Back Squat', var_blockName:blockName, var_paramNumbers:3, var_setNumbers:4])
 
-exerciseList.add(CustomKeywords.'com.bridgeathletic.exercise.getExerciseInfo'())
+exerciseList.add(CustomKeywords.'bridgeathletic.exercise.getExerciseInfo'())
 
-WebUI.callTestCase(findTestCase('Done/Commons/Add New Exercise And Set Value'), [var_exerciseName:CustomKeywords.'com.bridgeathletic.random.getRandomName'('Barbell '), var_blockName:blockName, var_paramNumbers:2, var_setNumbers:3])
+WebUI.callTestCase(findTestCase('Done/Commons/Add New Exercise And Set Value'), [var_exerciseName:CustomKeywords.'bridgeathletic.random.getRandomName'('Barbell '), var_blockName:blockName, var_paramNumbers:2, var_setNumbers:3])
 
 WebUI.setText(findTestObject('Phase Builder Page/Left Panel/input_Exercise Note'), 'This is my note for my exercise')
 
-exerciseList.add(CustomKeywords.'com.bridgeathletic.exercise.getExerciseInfo'())
+exerciseList.add(CustomKeywords.'bridgeathletic.exercise.getExerciseInfo'())
 
 WebUI.callTestCase(findTestCase('Done/Commons/Deliver To Athletes'), [:])
 
@@ -138,7 +138,7 @@ WebUI.waitForElementPresent(findTestObject('Commons/Program Calendar Popup/heade
 
 List<Integer> dateList = []
 
-dateList = CustomKeywords.'com.bridgeathletic.convert.convertFromDateStringToDateList'(currentPhase.startDate, 'MMM dd, yyyy')
+dateList = CustomKeywords.'bridgeathletic.convert.convertFromDateStringToDateList'(currentPhase.startDate, 'MMM dd, yyyy')
 
 WebUI.callTestCase(findTestCase('Done/Commons/Select Date In Calendar/Athlete Calendar/Select Date In Athlete Calendar'), [var_day:dateList[0], var_month:dateList[1], var_year:dateList[2]])
 

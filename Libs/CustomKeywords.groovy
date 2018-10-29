@@ -3,226 +3,404 @@
  * This class is generated automatically by Katalon Studio and should not be modified or deleted.
  */
 
+import java.util.ArrayList
+
 import java.lang.String
+
+import bridgeathletic.program
 
 import java.util.List
 
-import com.bridgeathletic.program
+import bridgeathletic.workout
 
-import com.bridgeathletic.workout
-
-import java.util.ArrayList
-
-import com.bridgeathletic.phase
+import bridgeathletic.phase
 
 
-def static "com.bridgeathletic.info.getBlockInfo"() {
-    (new com.bridgeathletic.info()).getBlockInfo()
+def static "bridgeathletic.random.getRandomNumber"(
+    	int maxNumber	) {
+    (new bridgeathletic.random()).getRandomNumber(
+        	maxNumber)
 }
 
-def static "com.bridgeathletic.info.getTemplateBlockInfo"() {
-    (new com.bridgeathletic.info()).getTemplateBlockInfo()
+def static "bridgeathletic.random.getRandomNumberIntoRange"(
+    	int minNumber	
+     , 	int maxNumber	) {
+    (new bridgeathletic.random()).getRandomNumberIntoRange(
+        	minNumber
+         , 	maxNumber)
 }
 
-def static "com.bridgeathletic.info.getBlockInfoInCal"(
-    	int blockNumber	) {
-    (new com.bridgeathletic.info()).getBlockInfoInCal(
-        	blockNumber)
+def static "bridgeathletic.random.getRandomListNumber"(
+    	int minNumber	
+     , 	int maxNumber	
+     , 	int listSize	) {
+    (new bridgeathletic.random()).getRandomListNumber(
+        	minNumber
+         , 	maxNumber
+         , 	listSize)
 }
 
-def static "com.bridgeathletic.info.getWorkoutInfo"(
-    	int workoutNumber	) {
-    (new com.bridgeathletic.info()).getWorkoutInfo(
-        	workoutNumber)
+def static "bridgeathletic.random.getRandomProgram"(
+    	java.util.ArrayList<String> allProgram	) {
+    (new bridgeathletic.random()).getRandomProgram(
+        	allProgram)
 }
 
-def static "com.bridgeathletic.info.getTeamInfo"(
-    	int teamNumber	) {
-    (new com.bridgeathletic.info()).getTeamInfo(
-        	teamNumber)
+def static "bridgeathletic.random.getRandomBlock"(
+    	int totalBlockNumbers	) {
+    (new bridgeathletic.random()).getRandomBlock(
+        	totalBlockNumbers)
 }
 
-def static "com.bridgeathletic.info.getAttendanceInfo"(
-    	int athleteNumber	) {
-    (new com.bridgeathletic.info()).getAttendanceInfo(
-        	athleteNumber)
+def static "bridgeathletic.random.getRandomName"(
+    	String startName	) {
+    (new bridgeathletic.random()).getRandomName(
+        	startName)
 }
 
-def static "com.bridgeathletic.info.getEventInfo"(
-    	int eventNumber	) {
-    (new com.bridgeathletic.info()).getEventInfo(
-        	eventNumber)
+def static "bridgeathletic.random.selectRandomTeam"() {
+    (new bridgeathletic.random()).selectRandomTeam()
 }
 
-def static "com.bridgeathletic.info.getTestResultInfoInTeamLeaderModule"() {
-    (new com.bridgeathletic.info()).getTestResultInfoInTeamLeaderModule()
+def static "bridgeathletic.random.selectRandomMember"(
+    	int totalMembers	) {
+    (new bridgeathletic.random()).selectRandomMember(
+        	totalMembers)
 }
 
-def static "com.bridgeathletic.info.getTestResultInfoInTestHistoryTable"() {
-    (new com.bridgeathletic.info()).getTestResultInfoInTestHistoryTable()
+def static "bridgeathletic.random.selectRandomDay"(
+    	int dayNumber	) {
+    (new bridgeathletic.random()).selectRandomDay(
+        	dayNumber)
 }
 
-def static "com.bridgeathletic.info.getTestResultInfoInHighCharts"() {
-    (new com.bridgeathletic.info()).getTestResultInfoInHighCharts()
+def static "bridgeathletic.random.selectRandomWeek"() {
+    (new bridgeathletic.random()).selectRandomWeek()
 }
 
-def static "com.bridgeathletic.exercise.getExerciseInfo"() {
-    (new com.bridgeathletic.exercise()).getExerciseInfo()
+def static "bridgeathletic.random.selectRandomNewBlock"() {
+    (new bridgeathletic.random()).selectRandomNewBlock()
 }
 
-def static "com.bridgeathletic.exercise.getExerciseInfoInCalendar"(
-    	String blockName	
-     , 	int exerciseIndex	) {
-    (new com.bridgeathletic.exercise()).getExerciseInfoInCalendar(
-        	blockName
-         , 	exerciseIndex)
+def static "bridgeathletic.block.getBlockInfoInCalendar"(
+    	int blockIndex	) {
+    (new bridgeathletic.block()).getBlockInfoInCalendar(
+        	blockIndex)
 }
 
-def static "com.bridgeathletic.exercise.addNewExerciseFromBlockName"(
-    	String blockName	
-     , 	String exerciseName	) {
-    (new com.bridgeathletic.exercise()).addNewExerciseFromBlockName(
-        	blockName
-         , 	exerciseName)
+def static "bridgeathletic.block.expandBlockFromName"(
+    	String blockName	) {
+    (new bridgeathletic.block()).expandBlockFromName(
+        	blockName)
 }
 
-def static "com.bridgeathletic.exercise.selectExerciseFromName"(
-    	String blockName	
-     , 	String exerciseName	) {
-    (new com.bridgeathletic.exercise()).selectExerciseFromName(
-        	blockName
-         , 	exerciseName)
+def static "bridgeathletic.block.addNewBlock"(
+    	int weekIndex	
+     , 	int workoutIndex	
+     , 	String blockName	) {
+    (new bridgeathletic.block()).addNewBlock(
+        	weekIndex
+         , 	workoutIndex
+         , 	blockName)
 }
 
-def static "com.bridgeathletic.exercise.editParameterNumbers"(
-    	java.util.List<String> paramName	) {
-    (new com.bridgeathletic.exercise()).editParameterNumbers(
-        	paramName)
+def static "bridgeathletic.block.addTemplateBlock"(
+    	int weekIndex	
+     , 	int workoutIndex	
+     , 	String blockName	) {
+    (new bridgeathletic.block()).addTemplateBlock(
+        	weekIndex
+         , 	workoutIndex
+         , 	blockName)
 }
 
-def static "com.bridgeathletic.exercise.editSetNumbers"(
-    	int setNumbers	) {
-    (new com.bridgeathletic.exercise()).editSetNumbers(
-        	setNumbers)
+def static "bridgeathletic.block.addWarmupPersonalizedBlock"(
+    	int weekIndex	
+     , 	int workoutIndex	) {
+    (new bridgeathletic.block()).addWarmupPersonalizedBlock(
+        	weekIndex
+         , 	workoutIndex)
 }
 
-def static "com.bridgeathletic.set.getAllSetsInfo"() {
-    (new com.bridgeathletic.set()).getAllSetsInfo()
+def static "bridgeathletic.block.addRecoveryPersonalizedBlock"(
+    	int weekIndex	
+     , 	int workoutIndex	) {
+    (new bridgeathletic.block()).addRecoveryPersonalizedBlock(
+        	weekIndex
+         , 	workoutIndex)
 }
 
-def static "com.bridgeathletic.set.getSetInfo"(
-    	int index	) {
-    (new com.bridgeathletic.set()).getSetInfo(
-        	index)
-}
-
-def static "com.bridgeathletic.set.setValueForSet"(
-    	int setIndex	
-     , 	java.util.List<java.lang.Integer> setValue	) {
-    (new com.bridgeathletic.set()).setValueForSet(
-        	setIndex
-         , 	setValue)
-}
-
-def static "com.bridgeathletic.program.printProgramInfo"(
+def static "bridgeathletic.program.printProgramInfo"(
     	program pr	) {
-    (new com.bridgeathletic.program()).printProgramInfo(
+    (new bridgeathletic.program()).printProgramInfo(
         	pr)
 }
 
-def static "com.bridgeathletic.program.getTotalProgramNumbers"() {
-    (new com.bridgeathletic.program()).getTotalProgramNumbers()
+def static "bridgeathletic.program.getTotalProgramNumbers"() {
+    (new bridgeathletic.program()).getTotalProgramNumbers()
 }
 
-def static "com.bridgeathletic.program.selectProgramInLibraryByIndex"(
+def static "bridgeathletic.program.selectProgramInLibraryByIndex"(
     	int index	) {
-    (new com.bridgeathletic.program()).selectProgramInLibraryByIndex(
+    (new bridgeathletic.program()).selectProgramInLibraryByIndex(
         	index)
 }
 
-def static "com.bridgeathletic.program.getProgramInfoInLibrary"(
+def static "bridgeathletic.program.getProgramInfoInLibrary"(
     	int index	) {
-    (new com.bridgeathletic.program()).getProgramInfoInLibrary(
+    (new bridgeathletic.program()).getProgramInfoInLibrary(
         	index)
 }
 
-def static "com.bridgeathletic.program.getUnassignedProgramInfoInDetail"() {
-    (new com.bridgeathletic.program()).getUnassignedProgramInfoInDetail()
+def static "bridgeathletic.program.getUnassignedProgramInfoInDetail"() {
+    (new bridgeathletic.program()).getUnassignedProgramInfoInDetail()
 }
 
-def static "com.bridgeathletic.program.getAssignedProgramInfoInDetail"() {
-    (new com.bridgeathletic.program()).getAssignedProgramInfoInDetail()
+def static "bridgeathletic.program.getAssignedProgramInfoInDetail"() {
+    (new bridgeathletic.program()).getAssignedProgramInfoInDetail()
 }
 
-def static "com.bridgeathletic.program.updateProgramInfo"(
+def static "bridgeathletic.program.updateProgramInfo"(
     	program pr1	
      , 	program pr2	) {
-    (new com.bridgeathletic.program()).updateProgramInfo(
+    (new bridgeathletic.program()).updateProgramInfo(
         	pr1
          , 	pr2)
 }
 
-def static "com.bridgeathletic.program.filterProgramsByCreator"(
+def static "bridgeathletic.program.filterProgramsByCreator"(
     	String filterByCreator	) {
-    (new com.bridgeathletic.program()).filterProgramsByCreator(
+    (new bridgeathletic.program()).filterProgramsByCreator(
         	filterByCreator)
 }
 
-def static "com.bridgeathletic.program.filterProgramsByTeam"(
+def static "bridgeathletic.program.filterProgramsByTeam"(
     	String filterByTeam	) {
-    (new com.bridgeathletic.program()).filterProgramsByTeam(
+    (new bridgeathletic.program()).filterProgramsByTeam(
         	filterByTeam)
 }
 
-def static "com.bridgeathletic.program.filterProgramsByType"(
+def static "bridgeathletic.program.filterProgramsByType"(
     	java.util.List<String> selectList	) {
-    (new com.bridgeathletic.program()).filterProgramsByType(
+    (new bridgeathletic.program()).filterProgramsByType(
         	selectList)
 }
 
-def static "com.bridgeathletic.block.expandBlockFromName"(
-    	String blockName	) {
-    (new com.bridgeathletic.block()).expandBlockFromName(
-        	blockName)
+def static "bridgeathletic.set.getAllSetsInfo"() {
+    (new bridgeathletic.set()).getAllSetsInfo()
 }
 
-def static "com.bridgeathletic.block.addNewBlock"(
-    	int weekIndex	
-     , 	int workoutIndex	
-     , 	String blockName	) {
-    (new com.bridgeathletic.block()).addNewBlock(
-        	weekIndex
-         , 	workoutIndex
-         , 	blockName)
+def static "bridgeathletic.set.getSetInfo"(
+    	int index	) {
+    (new bridgeathletic.set()).getSetInfo(
+        	index)
 }
 
-def static "com.bridgeathletic.block.addTemplateBlock"(
-    	int weekIndex	
-     , 	int workoutIndex	
-     , 	String blockName	) {
-    (new com.bridgeathletic.block()).addTemplateBlock(
-        	weekIndex
-         , 	workoutIndex
-         , 	blockName)
+def static "bridgeathletic.set.setValueForSet"(
+    	int setIndex	
+     , 	java.util.List<java.lang.Integer> setValue	) {
+    (new bridgeathletic.set()).setValueForSet(
+        	setIndex
+         , 	setValue)
 }
 
-def static "com.bridgeathletic.block.addWarmupPersonalizedBlock"(
+def static "bridgeathletic.parameter.getAllParametersInfo"() {
+    (new bridgeathletic.parameter()).getAllParametersInfo()
+}
+
+def static "bridgeathletic.parameter.getParameterInfo"(
+    	int index	) {
+    (new bridgeathletic.parameter()).getParameterInfo(
+        	index)
+}
+
+def static "bridgeathletic.parameter.getRandomParameterList"(
+    	int paramNumbers	) {
+    (new bridgeathletic.parameter()).getRandomParameterList(
+        	paramNumbers)
+}
+
+def static "bridgeathletic.workout.printWorkout"(
+    	workout wk	) {
+    (new bridgeathletic.workout()).printWorkout(
+        	wk)
+}
+
+def static "bridgeathletic.workout.getSelectedWorkoutInfoInAthleteCalendar"() {
+    (new bridgeathletic.workout()).getSelectedWorkoutInfoInAthleteCalendar()
+}
+
+def static "bridgeathletic.workout.scrollWorkoutToPresent"(
     	int weekIndex	
      , 	int workoutIndex	) {
-    (new com.bridgeathletic.block()).addWarmupPersonalizedBlock(
+    (new bridgeathletic.workout()).scrollWorkoutToPresent(
         	weekIndex
          , 	workoutIndex)
 }
 
-def static "com.bridgeathletic.block.addRecoveryPersonalizedBlock"(
+def static "bridgeathletic.workout.expandWeek"(
+    	int weekIndex	) {
+    (new bridgeathletic.workout()).expandWeek(
+        	weekIndex)
+}
+
+def static "bridgeathletic.workout.getWorkoutListInWeek"(
+    	int weekIndex	) {
+    (new bridgeathletic.workout()).getWorkoutListInWeek(
+        	weekIndex)
+}
+
+def static "bridgeathletic.workout.clickCloneWorkoutButtonByIndex"(
     	int weekIndex	
      , 	int workoutIndex	) {
-    (new com.bridgeathletic.block()).addRecoveryPersonalizedBlock(
+    (new bridgeathletic.workout()).clickCloneWorkoutButtonByIndex(
         	weekIndex
          , 	workoutIndex)
 }
 
-def static "com.bridgeathletic.testResultInfo.setTestResultInfo"(
+def static "bridgeathletic.workout.clickTreeDotButtonWorkoutByIndex"(
+    	int weekIndex	
+     , 	int workoutIndex	) {
+    (new bridgeathletic.workout()).clickTreeDotButtonWorkoutByIndex(
+        	weekIndex
+         , 	workoutIndex)
+}
+
+def static "bridgeathletic.workout.moveWorkout"(
+    	int fromWeekIndex	
+     , 	int fromWorkoutIndex	
+     , 	int toWeekIndex	
+     , 	int toWorkoutIndex	) {
+    (new bridgeathletic.workout()).moveWorkout(
+        	fromWeekIndex
+         , 	fromWorkoutIndex
+         , 	toWeekIndex
+         , 	toWorkoutIndex)
+}
+
+def static "bridgeathletic.convert.convertFromDate"(
+    	String currentDate	
+     , 	String formatCurrentDate	
+     , 	String formatExpectDate	
+     , 	int convertDate	
+     , 	String dateType	) {
+    (new bridgeathletic.convert()).convertFromDate(
+        	currentDate
+         , 	formatCurrentDate
+         , 	formatExpectDate
+         , 	convertDate
+         , 	dateType)
+}
+
+def static "bridgeathletic.convert.convertFormatDate"(
+    	String currentDate	
+     , 	String formatCurrentDate	
+     , 	String formatExpectDate	) {
+    (new bridgeathletic.convert()).convertFormatDate(
+        	currentDate
+         , 	formatCurrentDate
+         , 	formatExpectDate)
+}
+
+def static "bridgeathletic.convert.convertMonthFromStringToInteger"(
+    	String month	
+     , 	String format	) {
+    (new bridgeathletic.convert()).convertMonthFromStringToInteger(
+        	month
+         , 	format)
+}
+
+def static "bridgeathletic.convert.convertMonthFromIntToString"(
+    	int month	
+     , 	String format	) {
+    (new bridgeathletic.convert()).convertMonthFromIntToString(
+        	month
+         , 	format)
+}
+
+def static "bridgeathletic.convert.convertFromDateStringToDateList"(
+    	String date	
+     , 	String format	) {
+    (new bridgeathletic.convert()).convertFromDateStringToDateList(
+        	date
+         , 	format)
+}
+
+def static "bridgeathletic.calendar.selectDateInCalendar"(
+    	String date	) {
+    (new bridgeathletic.calendar()).selectDateInCalendar(
+        	date)
+}
+
+def static "bridgeathletic.info.getBlockInfo"() {
+    (new bridgeathletic.info()).getBlockInfo()
+}
+
+def static "bridgeathletic.info.getTemplateBlockInfo"() {
+    (new bridgeathletic.info()).getTemplateBlockInfo()
+}
+
+def static "bridgeathletic.info.getBlockInfoInCal"(
+    	int blockNumber	) {
+    (new bridgeathletic.info()).getBlockInfoInCal(
+        	blockNumber)
+}
+
+def static "bridgeathletic.info.getWorkoutInfo"(
+    	int workoutNumber	) {
+    (new bridgeathletic.info()).getWorkoutInfo(
+        	workoutNumber)
+}
+
+def static "bridgeathletic.info.getTeamInfo"(
+    	int teamNumber	) {
+    (new bridgeathletic.info()).getTeamInfo(
+        	teamNumber)
+}
+
+def static "bridgeathletic.info.getAttendanceInfo"(
+    	int athleteNumber	) {
+    (new bridgeathletic.info()).getAttendanceInfo(
+        	athleteNumber)
+}
+
+def static "bridgeathletic.info.getEventInfo"(
+    	int eventNumber	) {
+    (new bridgeathletic.info()).getEventInfo(
+        	eventNumber)
+}
+
+def static "bridgeathletic.info.getTestResultInfoInTeamLeaderModule"() {
+    (new bridgeathletic.info()).getTestResultInfoInTeamLeaderModule()
+}
+
+def static "bridgeathletic.info.getTestResultInfoInTestHistoryTable"() {
+    (new bridgeathletic.info()).getTestResultInfoInTestHistoryTable()
+}
+
+def static "bridgeathletic.info.getTestResultInfoInHighCharts"() {
+    (new bridgeathletic.info()).getTestResultInfoInHighCharts()
+}
+
+def static "bridgeathletic.total.getTotalBlockNumbers"() {
+    (new bridgeathletic.total()).getTotalBlockNumbers()
+}
+
+def static "bridgeathletic.total.getItemSize"(
+    	String xpath	) {
+    (new bridgeathletic.total()).getItemSize(
+        	xpath)
+}
+
+def static "bridgeathletic.total.getAllProgram"() {
+    (new bridgeathletic.total()).getAllProgram()
+}
+
+def static "bridgeathletic.total.getTotalAthleteMembers"() {
+    (new bridgeathletic.total()).getTotalAthleteMembers()
+}
+
+def static "bridgeathletic.testResultInfo.setTestResultInfo"(
     	Object exerciseName	
      , 	Object testForUnit	
      , 	Object parameterUnit	
@@ -231,7 +409,7 @@ def static "com.bridgeathletic.testResultInfo.setTestResultInfo"(
      , 	Object athleteName	
      , 	Object testValue	
      , 	Object RME	) {
-    (new com.bridgeathletic.testResultInfo()).setTestResultInfo(
+    (new bridgeathletic.testResultInfo()).setTestResultInfo(
         	exerciseName
          , 	testForUnit
          , 	parameterUnit
@@ -242,294 +420,126 @@ def static "com.bridgeathletic.testResultInfo.setTestResultInfo"(
          , 	RME)
 }
 
-def static "com.bridgeathletic.testResultInfo.verifyTestResultInfoListContains"(
-    	java.util.List<com.bridgeathletic.testResultInfo> actualList	
-     , 	java.util.List<com.bridgeathletic.testResultInfo> expectList	) {
-    (new com.bridgeathletic.testResultInfo()).verifyTestResultInfoListContains(
+def static "bridgeathletic.testResultInfo.verifyTestResultInfoListContains"(
+    	java.util.List<bridgeathletic.testResultInfo> actualList	
+     , 	java.util.List<bridgeathletic.testResultInfo> expectList	) {
+    (new bridgeathletic.testResultInfo()).verifyTestResultInfoListContains(
         	actualList
          , 	expectList)
 }
 
-def static "com.bridgeathletic.workout.printWorkout"(
-    	workout wk	) {
-    (new com.bridgeathletic.workout()).printWorkout(
-        	wk)
+def static "bridgeathletic.exercise.getExerciseInfo"() {
+    (new bridgeathletic.exercise()).getExerciseInfo()
 }
 
-def static "com.bridgeathletic.workout.scrollWorkoutToPresent"(
-    	int weekIndex	
-     , 	int workoutIndex	) {
-    (new com.bridgeathletic.workout()).scrollWorkoutToPresent(
-        	weekIndex
-         , 	workoutIndex)
+def static "bridgeathletic.exercise.getExerciseInfoInCalendar"(
+    	String blockName	
+     , 	int exerciseIndex	) {
+    (new bridgeathletic.exercise()).getExerciseInfoInCalendar(
+        	blockName
+         , 	exerciseIndex)
 }
 
-def static "com.bridgeathletic.workout.expandWeek"(
-    	int weekIndex	) {
-    (new com.bridgeathletic.workout()).expandWeek(
-        	weekIndex)
+def static "bridgeathletic.exercise.addNewExerciseFromBlockName"(
+    	String blockName	
+     , 	String exerciseName	) {
+    (new bridgeathletic.exercise()).addNewExerciseFromBlockName(
+        	blockName
+         , 	exerciseName)
 }
 
-def static "com.bridgeathletic.workout.getWorkoutListInWeek"(
-    	int weekIndex	) {
-    (new com.bridgeathletic.workout()).getWorkoutListInWeek(
-        	weekIndex)
+def static "bridgeathletic.exercise.selectExerciseFromName"(
+    	String blockName	
+     , 	String exerciseName	) {
+    (new bridgeathletic.exercise()).selectExerciseFromName(
+        	blockName
+         , 	exerciseName)
 }
 
-def static "com.bridgeathletic.workout.clickCloneWorkoutButtonByIndex"(
-    	int weekIndex	
-     , 	int workoutIndex	) {
-    (new com.bridgeathletic.workout()).clickCloneWorkoutButtonByIndex(
-        	weekIndex
-         , 	workoutIndex)
+def static "bridgeathletic.exercise.editParameterNumbers"(
+    	java.util.List<String> paramName	) {
+    (new bridgeathletic.exercise()).editParameterNumbers(
+        	paramName)
 }
 
-def static "com.bridgeathletic.workout.clickTreeDotButtonWorkoutByIndex"(
-    	int weekIndex	
-     , 	int workoutIndex	) {
-    (new com.bridgeathletic.workout()).clickTreeDotButtonWorkoutByIndex(
-        	weekIndex
-         , 	workoutIndex)
+def static "bridgeathletic.exercise.editSetNumbers"(
+    	int setNumbers	) {
+    (new bridgeathletic.exercise()).editSetNumbers(
+        	setNumbers)
 }
 
-def static "com.bridgeathletic.workout.moveWorkout"(
-    	int fromWeekIndex	
-     , 	int fromWorkoutIndex	
-     , 	int toWeekIndex	
-     , 	int toWorkoutIndex	) {
-    (new com.bridgeathletic.workout()).moveWorkout(
-        	fromWeekIndex
-         , 	fromWorkoutIndex
-         , 	toWeekIndex
-         , 	toWorkoutIndex)
-}
-
-def static "com.bridgeathletic.convert.convertFromDate"(
-    	String currentDate	
-     , 	String formatCurrentDate	
-     , 	String formatExpectDate	
-     , 	int convertDate	
-     , 	String dateType	) {
-    (new com.bridgeathletic.convert()).convertFromDate(
-        	currentDate
-         , 	formatCurrentDate
-         , 	formatExpectDate
-         , 	convertDate
-         , 	dateType)
-}
-
-def static "com.bridgeathletic.convert.convertFormatDate"(
-    	String currentDate	
-     , 	String formatCurrentDate	
-     , 	String formatExpectDate	) {
-    (new com.bridgeathletic.convert()).convertFormatDate(
-        	currentDate
-         , 	formatCurrentDate
-         , 	formatExpectDate)
-}
-
-def static "com.bridgeathletic.convert.convertMonthFromStringToInteger"(
-    	String month	
-     , 	String format	) {
-    (new com.bridgeathletic.convert()).convertMonthFromStringToInteger(
-        	month
-         , 	format)
-}
-
-def static "com.bridgeathletic.convert.convertMonthFromIntToString"(
-    	int month	
-     , 	String format	) {
-    (new com.bridgeathletic.convert()).convertMonthFromIntToString(
-        	month
-         , 	format)
-}
-
-def static "com.bridgeathletic.convert.convertFromDateStringToDateList"(
-    	String date	
-     , 	String format	) {
-    (new com.bridgeathletic.convert()).convertFromDateStringToDateList(
-        	date
-         , 	format)
-}
-
-def static "com.bridgeathletic.user.getUserInfo"(
-    	int index	) {
-    (new com.bridgeathletic.user()).getUserInfo(
-        	index)
-}
-
-def static "com.bridgeathletic.parameter.getAllParametersInfo"() {
-    (new com.bridgeathletic.parameter()).getAllParametersInfo()
-}
-
-def static "com.bridgeathletic.parameter.getParameterInfo"(
-    	int index	) {
-    (new com.bridgeathletic.parameter()).getParameterInfo(
-        	index)
-}
-
-def static "com.bridgeathletic.parameter.getRandomParameterList"(
-    	int paramNumbers	) {
-    (new com.bridgeathletic.parameter()).getRandomParameterList(
-        	paramNumbers)
-}
-
-def static "com.bridgeathletic.random.getRandomNumber"(
-    	int maxNumber	) {
-    (new com.bridgeathletic.random()).getRandomNumber(
-        	maxNumber)
-}
-
-def static "com.bridgeathletic.random.getRandomNumberIntoRange"(
-    	int minNumber	
-     , 	int maxNumber	) {
-    (new com.bridgeathletic.random()).getRandomNumberIntoRange(
-        	minNumber
-         , 	maxNumber)
-}
-
-def static "com.bridgeathletic.random.getRandomListNumber"(
-    	int minNumber	
-     , 	int maxNumber	
-     , 	int listSize	) {
-    (new com.bridgeathletic.random()).getRandomListNumber(
-        	minNumber
-         , 	maxNumber
-         , 	listSize)
-}
-
-def static "com.bridgeathletic.random.getRandomProgram"(
-    	java.util.ArrayList<String> allProgram	) {
-    (new com.bridgeathletic.random()).getRandomProgram(
-        	allProgram)
-}
-
-def static "com.bridgeathletic.random.getRandomBlock"(
-    	int totalBlockNumbers	) {
-    (new com.bridgeathletic.random()).getRandomBlock(
-        	totalBlockNumbers)
-}
-
-def static "com.bridgeathletic.random.getRandomName"(
-    	String startName	) {
-    (new com.bridgeathletic.random()).getRandomName(
-        	startName)
-}
-
-def static "com.bridgeathletic.random.selectRandomTeam"() {
-    (new com.bridgeathletic.random()).selectRandomTeam()
-}
-
-def static "com.bridgeathletic.random.selectRandomMember"(
-    	int totalMembers	) {
-    (new com.bridgeathletic.random()).selectRandomMember(
-        	totalMembers)
-}
-
-def static "com.bridgeathletic.random.selectRandomDay"(
-    	int dayNumber	) {
-    (new com.bridgeathletic.random()).selectRandomDay(
-        	dayNumber)
-}
-
-def static "com.bridgeathletic.random.selectRandomWeek"() {
-    (new com.bridgeathletic.random()).selectRandomWeek()
-}
-
-def static "com.bridgeathletic.random.selectRandomNewBlock"() {
-    (new com.bridgeathletic.random()).selectRandomNewBlock()
-}
-
-def static "com.bridgeathletic.click.clickDateObjectFromXpath"(
-    	String xp	) {
-    (new com.bridgeathletic.click()).clickDateObjectFromXpath(
-        	xp)
-}
-
-def static "com.bridgeathletic.phase.printPhaseInfo"(
+def static "bridgeathletic.phase.printPhaseInfo"(
     	phase ph	) {
-    (new com.bridgeathletic.phase()).printPhaseInfo(
+    (new bridgeathletic.phase()).printPhaseInfo(
         	ph)
 }
 
-def static "com.bridgeathletic.phase.getTotalPhaseNumbersInDetail"() {
-    (new com.bridgeathletic.phase()).getTotalPhaseNumbersInDetail()
+def static "bridgeathletic.phase.getTotalPhaseNumbersInDetail"() {
+    (new bridgeathletic.phase()).getTotalPhaseNumbersInDetail()
 }
 
-def static "com.bridgeathletic.phase.getPhaseInfoInDetail"(
+def static "bridgeathletic.phase.getPhaseInfoInDetail"(
     	int phaseNumber	) {
-    (new com.bridgeathletic.phase()).getPhaseInfoInDetail(
+    (new bridgeathletic.phase()).getPhaseInfoInDetail(
         	phaseNumber)
 }
 
-def static "com.bridgeathletic.phase.getPhaseList"(
+def static "bridgeathletic.phase.getPhaseList"(
     	int totalPhaseNumbers	) {
-    (new com.bridgeathletic.phase()).getPhaseList(
+    (new bridgeathletic.phase()).getPhaseList(
         	totalPhaseNumbers)
 }
 
-def static "com.bridgeathletic.phase.getEditPhaseObjectByName"(
+def static "bridgeathletic.phase.getEditPhaseObjectByName"(
     	String phaseName	) {
-    (new com.bridgeathletic.phase()).getEditPhaseObjectByName(
+    (new bridgeathletic.phase()).getEditPhaseObjectByName(
         	phaseName)
 }
 
-def static "com.bridgeathletic.phase.getEditPhaseObjectByIndex"(
+def static "bridgeathletic.phase.getEditPhaseObjectByIndex"(
     	int index	) {
-    (new com.bridgeathletic.phase()).getEditPhaseObjectByIndex(
+    (new bridgeathletic.phase()).getEditPhaseObjectByIndex(
         	index)
 }
 
-def static "com.bridgeathletic.phase.getAnalyzePhaseObjectByName"(
+def static "bridgeathletic.phase.getAnalyzePhaseObjectByName"(
     	String phaseName	) {
-    (new com.bridgeathletic.phase()).getAnalyzePhaseObjectByName(
+    (new bridgeathletic.phase()).getAnalyzePhaseObjectByName(
         	phaseName)
 }
 
-def static "com.bridgeathletic.phase.getAnalyzePhaseObjectByIndex"(
+def static "bridgeathletic.phase.getAnalyzePhaseObjectByIndex"(
     	int index	) {
-    (new com.bridgeathletic.phase()).getAnalyzePhaseObjectByIndex(
+    (new bridgeathletic.phase()).getAnalyzePhaseObjectByIndex(
         	index)
 }
 
-def static "com.bridgeathletic.phase.getTreeDotPhaseObjectByName"(
+def static "bridgeathletic.phase.getTreeDotPhaseObjectByName"(
     	String phaseName	) {
-    (new com.bridgeathletic.phase()).getTreeDotPhaseObjectByName(
+    (new bridgeathletic.phase()).getTreeDotPhaseObjectByName(
         	phaseName)
 }
 
-def static "com.bridgeathletic.phase.getTreeDotPhaseObjectByIndex"(
+def static "bridgeathletic.phase.getTreeDotPhaseObjectByIndex"(
     	int index	) {
-    (new com.bridgeathletic.phase()).getTreeDotPhaseObjectByIndex(
+    (new bridgeathletic.phase()).getTreeDotPhaseObjectByIndex(
         	index)
 }
 
-def static "com.bridgeathletic.phase.getPhaseIndexByName"(
+def static "bridgeathletic.phase.getPhaseIndexByName"(
     	String phaseName	) {
-    (new com.bridgeathletic.phase()).getPhaseIndexByName(
+    (new bridgeathletic.phase()).getPhaseIndexByName(
         	phaseName)
 }
 
-def static "com.bridgeathletic.calendar.selectDateInCalendar"(
-    	String date	) {
-    (new com.bridgeathletic.calendar()).selectDateInCalendar(
-        	date)
+def static "bridgeathletic.click.clickDateObjectFromXpath"(
+    	String xp	) {
+    (new bridgeathletic.click()).clickDateObjectFromXpath(
+        	xp)
 }
 
-def static "com.bridgeathletic.total.getTotalBlockNumbers"() {
-    (new com.bridgeathletic.total()).getTotalBlockNumbers()
-}
-
-def static "com.bridgeathletic.total.getItemSize"(
-    	String xpath	) {
-    (new com.bridgeathletic.total()).getItemSize(
-        	xpath)
-}
-
-def static "com.bridgeathletic.total.getAllProgram"() {
-    (new com.bridgeathletic.total()).getAllProgram()
-}
-
-def static "com.bridgeathletic.total.getTotalAthleteMembers"() {
-    (new com.bridgeathletic.total()).getTotalAthleteMembers()
+def static "bridgeathletic.user.getUserInfo"(
+    	int index	) {
+    (new bridgeathletic.user()).getUserInfo(
+        	index)
 }

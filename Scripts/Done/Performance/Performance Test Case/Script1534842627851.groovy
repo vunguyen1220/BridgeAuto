@@ -39,11 +39,11 @@ WebUI.click(findTestObject('Library/button_New Program'))
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-String randomProgramName = CustomKeywords.'com.bridgeathletic.random.getRandomName'('Performance Program Name ')
+String randomProgramName = CustomKeywords.'bridgeathletic.random.getRandomName'('Performance Program Name ')
 
 WebUI.setText(findTestObject('A Program Page/input_new-program-name'), randomProgramName)
 
-String randomProgramDescription = CustomKeywords.'com.bridgeathletic.random.getRandomName'('Performance Program Description ')
+String randomProgramDescription = CustomKeywords.'bridgeathletic.random.getRandomName'('Performance Program Description ')
 
 WebUI.setText(findTestObject('A Program Page/textarea_new-program-description'), randomProgramDescription)
 
@@ -59,7 +59,7 @@ WebUI.click(findTestObject('A Program Page/a_Template Phase'))
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-int rd = CustomKeywords.'com.bridgeathletic.random.getRandomNumber'(20)
+int rd = CustomKeywords.'bridgeathletic.random.getRandomNumber'(20)
 
 TestObject randomSelectPhaseObject = new TestObject()
 
@@ -80,7 +80,7 @@ WebUI.click(findTestObject('A Program Page/a_New Phase'))
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-String randomPhaseName = CustomKeywords.'com.bridgeathletic.random.getRandomName'('Performance Phase Name ')
+String randomPhaseName = CustomKeywords.'bridgeathletic.random.getRandomName'('Performance Phase Name ')
 
 WebUI.setText(findTestObject('Phase Builder Page/input_phase-name'), randomPhaseName)
 
@@ -102,9 +102,9 @@ WebUI.waitForElementPresent(findTestObject('Phase Builder Page/li_template-phase
 
 WebUI.delay(1)
 
-int templatePhaseNumbers = CustomKeywords.'com.bridgeathletic.total.getItemSize'('//div[@class="list-phase-popup"]/ul[1]/li[@class="ng-scope"]')
+int templatePhaseNumbers = CustomKeywords.'bridgeathletic.total.getItemSize'('//div[@class="list-phase-popup"]/ul[1]/li[@class="ng-scope"]')
 
-rd = CustomKeywords.'com.bridgeathletic.random.getRandomNumber'(templatePhaseNumbers)
+rd = CustomKeywords.'bridgeathletic.random.getRandomNumber'(templatePhaseNumbers)
 
 TestObject randomTemplatePhaseObject = new TestObject()
 
@@ -129,7 +129,7 @@ WebUI.delay(7)
 
 WebUI.callTestCase(findTestCase('Done/Commons/Assign A Program/Assign A Program'), [:])
 
-TestObject editRandomPhaseObject = CustomKeywords.'com.bridgeathletic.phase.getEditPhaseObjectByIndex'(1)
+TestObject editRandomPhaseObject = CustomKeywords.'bridgeathletic.phase.getEditPhaseObjectByIndex'(1)
 
 WebUI.click(editRandomPhaseObject)
 

@@ -36,7 +36,7 @@ while (flag == true){
 
 	flag = false
 	
-	if (CustomKeywords.'com.bridgeathletic.total.getItemSize'('//div[@id="messageAlert"]/span[@aria-hidden="false"]') > 0){
+	if (CustomKeywords.'bridgeathletic.total.getItemSize'('//div[@id="messageAlert"]/span[@aria-hidden="false"]') > 0){
 
 		TestObject headerLoadingObject = new TestObject()
 
@@ -48,7 +48,7 @@ while (flag == true){
 
 	}
 
-	if (CustomKeywords.'com.bridgeathletic.total.getItemSize'('//div[@class="block-ui ng-binding"]/div[@class="md-dialog-container ng-scope"]') > 0){
+	if (CustomKeywords.'bridgeathletic.total.getItemSize'('//div[@class="block-ui ng-binding"]/div[@class="md-dialog-container ng-scope"]') > 0){
 
 		TestObject loadingObject = new TestObject()
 
@@ -60,7 +60,7 @@ while (flag == true){
 
 	}
 
-	if (CustomKeywords.'com.bridgeathletic.total.getItemSize'('//div[@class="loading-overlay"]') > 0){
+	if (CustomKeywords.'bridgeathletic.total.getItemSize'('//div[@class="loading-overlay"]') > 0){
 
 		TestObject loadingContentObject = new TestObject()
 
@@ -72,7 +72,7 @@ while (flag == true){
 
 	}
 
-	if (CustomKeywords.'com.bridgeathletic.total.getItemSize'('//div[contains(@id,"wm-shoutout")]') > 0){
+	if (CustomKeywords.'bridgeathletic.total.getItemSize'('//div[contains(@id,"wm-shoutout")]') > 0){
 
 		TestObject xButtonWalkMeObject = new TestObject()
 
@@ -84,7 +84,7 @@ while (flag == true){
 
 	}
 
-	if (CustomKeywords.'com.bridgeathletic.total.getItemSize'('//md-dialog[@id="accept-term-pop"]') > 0){
+	if (CustomKeywords.'bridgeathletic.total.getItemSize'('//md-dialog[@id="accept-term-pop"]') > 0){
 
 		TestObject viewObject = new TestObject()
 

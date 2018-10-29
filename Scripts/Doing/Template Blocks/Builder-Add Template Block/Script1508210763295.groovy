@@ -108,13 +108,13 @@ WebUI.click(findTestObject('Template Blocks/Builder-Add Template Block/strong_Te
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-ArrayList<String> AllProgram = CustomKeywords.'com.bridgeathletic.total.getAllProgram'()
+ArrayList<String> AllProgram = CustomKeywords.'bridgeathletic.total.getAllProgram'()
 
 int phaseNumbers = 0
 
 'Open one of the programs (either assigned or unassigned, chose randomly)'
 while (phaseNumbers == 0) {
-	TestObject randomProgram = CustomKeywords.'com.bridgeathletic.random.getRandomProgram'(AllProgram)
+	TestObject randomProgram = CustomKeywords.'bridgeathletic.random.getRandomProgram'(AllProgram)
 
 	while (WebUI.waitForElementVisible(randomProgram, 2, FailureHandling.OPTIONAL) == false) {
 		WebUI.click(findTestObject('Commons/div_sub-title_left'))
@@ -132,11 +132,11 @@ while (phaseNumbers == 0) {
 	System.out.println('Phase Numbers of Program: ' + phaseNumbers)
 }
 
-int randomPhaseNumber = CustomKeywords.'com.bridgeathletic.random.getRandomNumber'(phaseNumbers)
+int randomPhaseNumber = CustomKeywords.'bridgeathletic.random.getRandomNumber'(phaseNumbers)
 
 Object randomPhase = phaseInfo
 
-randomPhase = CustomKeywords.'com.bridgeathletic.info.getPhaseInfo'(randomPhaseNumber)
+randomPhase = CustomKeywords.'bridgeathletic.info.getPhaseInfo'(randomPhaseNumber)
 
 'Open one of the phases in that program (at random)'
 WebUI.click(randomPhase.editPhase)
@@ -160,7 +160,7 @@ WebUI.scrollToElement(findTestObject('Object Repository/Commons/span_week-name')
 
 int totalTemplateBlockNumbers = 1
 
-int totalBlockNumbers = CustomKeywords.'com.bridgeathletic.total.getTotalBlockNumbers'()
+int totalBlockNumbers = CustomKeywords.'bridgeathletic.total.getTotalBlockNumbers'()
 
 ArrayList<String> blockList = new ArrayList<String>()
 
@@ -177,7 +177,7 @@ while (totalTemplateBlockNumbers < 3) {
 	TestObject tmpRandomBlock
 
 	while (tmpExNumbers == 0) {
-		tmpRandomBlock = CustomKeywords.'com.bridgeathletic.random.getRandomBlock'(totalBlockNumbers)
+		tmpRandomBlock = CustomKeywords.'bridgeathletic.random.getRandomBlock'(totalBlockNumbers)
 
 		WebUI.scrollToElement(findTestObject('Object Repository/Commons/span_week-name'), 30)
 
@@ -187,14 +187,14 @@ while (totalTemplateBlockNumbers < 3) {
 
 		WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-		tmpRandomBlockInfo = CustomKeywords.'com.bridgeathletic.info.getBlockInfo'()
+		tmpRandomBlockInfo = CustomKeywords.'bridgeathletic.info.getBlockInfo'()
 
 		tmpExNumbers = tmpRandomBlockInfo.exerciseNumber
 	}
 
 	blockList.add(tmpRandomBlockInfo)
 
-	tmpBlockName = CustomKeywords.'com.bridgeathletic.random.getRandomName'(('template-builder ' + totalTemplateBlockNumbers) +
+	tmpBlockName = CustomKeywords.'bridgeathletic.random.getRandomName'(('template-builder ' + totalTemplateBlockNumbers) +
 			' ')
 
 	System.out.println('Template Block Name: ' + tmpBlockName)
@@ -258,7 +258,7 @@ for (int i = 0; i < blockList.size; i = (i + 1)) {
 
 	Object templateBlockInfo = blockInfo
 
-	templateBlockInfo = CustomKeywords.'com.bridgeathletic.info.getTemplateBlockInfo'()
+	templateBlockInfo = CustomKeywords.'bridgeathletic.info.getTemplateBlockInfo'()
 
 	WebUI.verifyEqual(templateBlockInfo.blockName, templateBlockNameList[i].toUpperCase())
 
@@ -290,12 +290,12 @@ WebUI.click(findTestObject('Template Blocks/Builder-Add Template Block/strong_Te
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-AllProgram = CustomKeywords.'com.bridgeathletic.total.getAllProgram'()
+AllProgram = CustomKeywords.'bridgeathletic.total.getAllProgram'()
 
 phaseNumbers = 0
 
 while (phaseNumbers == 0) {
-	TestObject randomProgram = CustomKeywords.'com.bridgeathletic.random.getRandomProgram'(AllProgram)
+	TestObject randomProgram = CustomKeywords.'bridgeathletic.random.getRandomProgram'(AllProgram)
 
 	while (WebUI.waitForElementVisible(randomProgram, 2, FailureHandling.OPTIONAL) == false) {
 		WebUI.click(findTestObject('Commons/div_sub-title_left'))
@@ -313,9 +313,9 @@ while (phaseNumbers == 0) {
 	System.out.println('Phase Numbers of Program: ' + phaseNumbers)
 }
 
-randomPhaseNumber = CustomKeywords.'com.bridgeathletic.random.getRandomNumber'(phaseNumbers)
+randomPhaseNumber = CustomKeywords.'bridgeathletic.random.getRandomNumber'(phaseNumbers)
 
-randomPhase = CustomKeywords.'com.bridgeathletic.info.getPhaseInfo'(randomPhaseNumber)
+randomPhase = CustomKeywords.'bridgeathletic.info.getPhaseInfo'(randomPhaseNumber)
 
 'Open one of the phases in that program (at random)'
 WebUI.click(randomPhase.editPhase)
@@ -356,7 +356,7 @@ for (int i = 0; i < blockList.size; i = (i + 1)) {
 
 	Object tmpBlockInfo = blockInfo
 
-	tmpBlockInfo = CustomKeywords.'com.bridgeathletic.info.getBlockInfo'()
+	tmpBlockInfo = CustomKeywords.'bridgeathletic.info.getBlockInfo'()
 
 	WebUI.verifyEqual(tmpBlockInfo.blockName, templateBlockNameList[i])
 
@@ -395,12 +395,12 @@ false) {
 
 	WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-	AllProgram = CustomKeywords.'com.bridgeathletic.total.getAllProgram'()
+	AllProgram = CustomKeywords.'bridgeathletic.total.getAllProgram'()
 
 	phaseNumbers = 0
 
 	while (phaseNumbers == 0) {
-		TestObject randomProgram = CustomKeywords.'com.bridgeathletic.random.getRandomProgram'(AllProgram)
+		TestObject randomProgram = CustomKeywords.'bridgeathletic.random.getRandomProgram'(AllProgram)
 
 		while (WebUI.waitForElementVisible(randomProgram, 2, FailureHandling.OPTIONAL) == false) {
 			WebUI.click(findTestObject('Commons/div_sub-title_left'))
@@ -419,7 +419,7 @@ false) {
 
 	WebUI.callTestCase(findTestCase('Done/Commons/Assign A Program/Assign A Program'), [:])
 	
-	CustomKeywords.'com.bridgeathletic.select.selectProgramGroup'('All Programs', 'Assigned')
+	CustomKeywords.'bridgeathletic.select.selectProgramGroup'('All Programs', 'Assigned')
 	
 }
 
@@ -429,12 +429,12 @@ WebUI.click(findTestObject('Template Blocks/Builder-Add Template Block/strong_Te
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-AllProgram = CustomKeywords.'com.bridgeathletic.total.getAllProgram'()
+AllProgram = CustomKeywords.'bridgeathletic.total.getAllProgram'()
 
 phaseNumbers = 0
 
 while (phaseNumbers == 0) {
-	TestObject randomProgram = CustomKeywords.'com.bridgeathletic.random.getRandomProgram'(AllProgram)
+	TestObject randomProgram = CustomKeywords.'bridgeathletic.random.getRandomProgram'(AllProgram)
 
 	while (WebUI.waitForElementVisible(randomProgram, 2, FailureHandling.OPTIONAL) == false) {
 		WebUI.click(findTestObject('Commons/div_sub-title_left'))
@@ -468,9 +468,9 @@ WebUI.click(findTestObject('Template Blocks/Builder-Add Template Block/button_md
 
 WebUI.delay(1)
 
-randomPhaseNumber = CustomKeywords.'com.bridgeathletic.random.getRandomNumber'(phaseNumbers)
+randomPhaseNumber = CustomKeywords.'bridgeathletic.random.getRandomNumber'(phaseNumbers)
 
-randomPhase = CustomKeywords.'com.bridgeathletic.info.getPhaseInfo'(randomPhaseNumber)
+randomPhase = CustomKeywords.'bridgeathletic.info.getPhaseInfo'(randomPhaseNumber)
 
 'Open one of the phases in that program (at random)'
 WebUI.click(randomPhase.editPhase)
@@ -521,7 +521,7 @@ for (int i = 0; i < blockList.size; i = (i + 1)) {
 
 	Object tmpBlockInfo = blockInfo
 
-	tmpBlockInfo = CustomKeywords.'com.bridgeathletic.info.getBlockInfo'()
+	tmpBlockInfo = CustomKeywords.'bridgeathletic.info.getBlockInfo'()
 
 	WebUI.verifyEqual(tmpBlockInfo.blockName, templateBlockNameList[i])
 
@@ -580,13 +580,13 @@ WebUI.click(selectDayObject)
 
 WebUI.verifyElementPresent(findTestObject('Commons/md-dialog_selectedDay'), 30)
 
-int blockSize = CustomKeywords.'com.bridgeathletic.total.getItemSize'('//div[@class="block-name"]')
+int blockSize = CustomKeywords.'bridgeathletic.total.getItemSize'('//div[@class="block-name"]')
 
 'Confirm that the athletes received the changes successfully, from the athlete profile page / athlete calendar.'
 for (int i = 0; i < blockList.size; i = (i + 1)) {
 	Object blockInfoInCal = blockInfo
 
-	blockInfoInCal = CustomKeywords.'com.bridgeathletic.info.getBlockInfoInCal'(((blockSize - blockList.size) + i) + 1)
+	blockInfoInCal = CustomKeywords.'bridgeathletic.info.getBlockInfoInCal'(((blockSize - blockList.size) + i) + 1)
 
 	WebUI.verifyEqual(blockInfoInCal.blockName, templateBlockNameList[i])
 
@@ -625,7 +625,7 @@ while (WebUI.verifyElementPresent(findTestObject('Commons/button_collapse-btn md
 
 WebUI.scrollToElement(findTestObject('Object Repository/Commons/span_week-name'), 30)
 
-totalBlockNumbers = CustomKeywords.'com.bridgeathletic.total.getTotalBlockNumbers'()
+totalBlockNumbers = CustomKeywords.'bridgeathletic.total.getTotalBlockNumbers'()
 
 System.out.println('Total Template Block Numbers: ' + totalTemplateBlockNumbers)
 
@@ -640,7 +640,7 @@ while (totalTemplateBlockNumbers < 4) {
 	TestObject tmpRandomBlock
 
 	while (tmpExNumbers == 0) {
-		tmpRandomBlock = CustomKeywords.'com.bridgeathletic.random.getRandomBlock'(totalBlockNumbers)
+		tmpRandomBlock = CustomKeywords.'bridgeathletic.random.getRandomBlock'(totalBlockNumbers)
 
 		WebUI.scrollToElement(findTestObject('Object Repository/Commons/span_week-name'), 2)
 
@@ -650,14 +650,14 @@ while (totalTemplateBlockNumbers < 4) {
 
 		WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-		tmpRandomBlockInfo = CustomKeywords.'com.bridgeathletic.info.getBlockInfo'()
+		tmpRandomBlockInfo = CustomKeywords.'bridgeathletic.info.getBlockInfo'()
 
 		tmpExNumbers = tmpRandomBlockInfo.exerciseNumber
 	}
 
 	blockList.add(tmpRandomBlockInfo)
 
-	tmpBlockName = CustomKeywords.'com.bridgeathletic.random.getRandomName'('template-builder 3 ')
+	tmpBlockName = CustomKeywords.'bridgeathletic.random.getRandomName'('template-builder 3 ')
 
 	System.out.println('Template Block Name: ' + tmpBlockName)
 
@@ -724,7 +724,7 @@ for (int i = 0; i < blockList.size; i = (i + 1)) {
 
 	Object templateBlockInfo = blockInfo
 
-	templateBlockInfo = CustomKeywords.'com.bridgeathletic.info.getTemplateBlockInfo'()
+	templateBlockInfo = CustomKeywords.'bridgeathletic.info.getTemplateBlockInfo'()
 
 	WebUI.verifyEqual(templateBlockInfo.blockName, templateBlockNameList[i].toUpperCase())
 
@@ -821,7 +821,7 @@ for (int i = 2; i < blockList.size; i = (i + 1)) {
 
 	Object tmpBlockInfo = blockInfo
 
-	tmpBlockInfo = CustomKeywords.'com.bridgeathletic.info.getBlockInfo'()
+	tmpBlockInfo = CustomKeywords.'bridgeathletic.info.getBlockInfo'()
 
 	WebUI.verifyEqual(tmpBlockInfo.blockName, templateBlockNameList[i])
 
@@ -832,7 +832,7 @@ for (int i = 2; i < blockList.size; i = (i + 1)) {
 
 Object workoutInfo = workoutInfo
 
-workoutInfo = CustomKeywords.'com.bridgeathletic.info.getWorkoutInfo'(1)
+workoutInfo = CustomKeywords.'bridgeathletic.info.getWorkoutInfo'(1)
 
 WebUI.click(findTestObject('Template Blocks/Builder-Add Template Block/span_member-name'))
 
@@ -847,13 +847,13 @@ WebUI.click(selectDayObject)
 
 WebUI.verifyElementPresent(findTestObject('Commons/md-dialog_selectedDay'), 30)
 
-blockSize = CustomKeywords.'com.bridgeathletic.total.getItemSize'('//div[@class="block-name"]')
+blockSize = CustomKeywords.'bridgeathletic.total.getItemSize'('//div[@class="block-name"]')
 
 'Confirm that the athlete received the changes successfully, from the athlete profile page / athlete calendar.'
 for (int i = 2; i < blockList.size; i = (i + 1)) {
 	Object blockInfoInCal = blockInfo
 
-	blockInfoInCal = CustomKeywords.'com.bridgeathletic.info.getBlockInfoInCal'(((blockSize - blockList.size) + i) + 1)
+	blockInfoInCal = CustomKeywords.'bridgeathletic.info.getBlockInfoInCal'(((blockSize - blockList.size) + i) + 1)
 
 	WebUI.verifyEqual(blockInfoInCal.blockName, templateBlockNameList[i])
 

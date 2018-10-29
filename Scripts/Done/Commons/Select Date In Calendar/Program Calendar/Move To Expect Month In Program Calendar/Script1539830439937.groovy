@@ -21,7 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 List<String> currentDate = WebUI.getText(findTestObject('Commons/Athlete Calendar/text_Current Date')).split(' ')
 
-int currentMonth = CustomKeywords.'com.bridgeathletic.convert.convertMonthFromStringToInteger'(currentDate[0], 'MMMM')
+int currentMonth = CustomKeywords.'bridgeathletic.convert.convertMonthFromStringToInteger'(currentDate[0], 'MMMM')
 
 while (currentMonth != var_month){
 	
@@ -33,7 +33,7 @@ while (currentMonth != var_month){
 		
 		currentDate = WebUI.getText(findTestObject('Commons/Program Calendar Popup/header_Current Date')).split(' ')
 		
-		currentMonth = CustomKeywords.'com.bridgeathletic.convert.convertMonthFromStringToInteger'(currentDate[0], 'MMMM')
+		currentMonth = CustomKeywords.'bridgeathletic.convert.convertMonthFromStringToInteger'(currentDate[0], 'MMMM')
 		
 	}
 	
@@ -45,7 +45,7 @@ while (currentMonth != var_month){
 		
 		currentDate = WebUI.getText(findTestObject('Commons/Program Calendar Popup/header_Current Date')).split(' ')
 		
-		currentMonth = CustomKeywords.'com.bridgeathletic.convert.convertMonthFromStringToInteger'(currentDate[0], 'MMMM')
+		currentMonth = CustomKeywords.'bridgeathletic.convert.convertMonthFromStringToInteger'(currentDate[0], 'MMMM')
 		
 	}
 	
