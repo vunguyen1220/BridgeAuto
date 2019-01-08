@@ -78,20 +78,18 @@ public class random {
 
 		return randomNumber
 	}
-	
+
 	@Keyword
 	def getRandomListNumber (int minNumber, int maxNumber, int listSize){
-		
+
 		List<Integer> listNumber = []
-		
+
 		while (listNumber.size() < listSize){
-			
+
 			listNumber.add(getRandomNumberIntoRange(minNumber, maxNumber))
-			
 		}
-		
+
 		return listNumber
-		
 	}
 
 	@Keyword

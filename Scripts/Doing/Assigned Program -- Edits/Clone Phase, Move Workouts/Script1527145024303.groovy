@@ -6,11 +6,11 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import org.openqa.selenium.JavascriptExecutor
 import org.openqa.selenium.WebDriver
 
-import com.bridgeathletic.blockInfo
-import com.bridgeathletic.phase
-import com.bridgeathletic.program
-import com.bridgeathletic.user
-import com.bridgeathletic.workout
+import bridgeathletic.blockInfo as blockInfo
+import bridgeathletic.phase as phase
+import bridgeathletic.program as program
+import bridgeathletic.user as user
+import bridgeathletic.workout as workout
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords

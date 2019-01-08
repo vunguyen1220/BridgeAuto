@@ -167,27 +167,41 @@ public class program {
 
 		Object programInfo = new program()
 
+		//Set Program Name
+
 		String programName = driver.findElement(By.xpath('//div[@ng-click = "viewProgram(item)"]['+ index +']/div[@class="items name ng-scope"]/span')).getText()
 
 		programInfo.setProgramName(programName)
 
-		List<String> dateText = (driver.findElement(By.xpath('//div[@ng-click = "viewProgram(item)"]['+ index +']//div[@class="date ng-scope"]/span[1]')).getText()).split(' ')
+		//Set Program Week Duration
 
-		programInfo.setDurationNumbers(0)
+		List<String> dateText = (driver.findElement(By.xpath('//div[@ng-click = "viewProgram(item)"]['+ index +']//div[@class="date ng-scope"]/span[1]')).getText()).split(' ')
 
 		if (dateText[0].length() > 0 && dateText[0] != '0'){
 
 			programInfo.setDurationNumbers(Integer.parseInt(dateText[0]))
 		}
 
-		dateText = (driver.findElement(By.xpath('//div[@ng-click = "viewProgram(item)"]['+ index +']//div[@class="date ng-scope"]/span[2]')).getText()).split(' ')
+		else {
 
-		programInfo.setDayPerWeekNumbers(0)
+			programInfo.setDurationNumbers(0)
+		}
+
+		//Set Program Day Duration
+
+		dateText = (driver.findElement(By.xpath('//div[@ng-click = "viewProgram(item)"]['+ index +']//div[@class="date ng-scope"]/span[2]')).getText()).split(' ')
 
 		if (dateText.size > 1){
 
 			programInfo.setDayPerWeekNumbers(Integer.parseInt(dateText[0]))
 		}
+
+		else {
+
+			programInfo.setDayPerWeekNumbers(0)
+		}
+
+		//Set Program Edited By
 
 		String editedBy = driver.findElement(By.xpath('//div[@ng-click = "viewProgram(item)"]['+ index +']/div[@class="items edited-by ng-scope"]/span')).getText()
 
@@ -196,19 +210,35 @@ public class program {
 			programInfo.setEditedBy(editedBy)
 		}
 
+		//Set Program Edited Date
+
 		String editedDate = driver.findElement(By.xpath('//div[@ng-click = "viewProgram(item)"]['+ index +']/div[@class="items edited-on ng-binding ng-scope"]')).getText()
 
 		programInfo.setEditedDate(editedDate)
+
+		//Set Program Assign Status
 
 		String assignStatus = driver.findElement(By.xpath('//div[@ng-click = "viewProgram(item)"]['+ index +']/div[@class="items text-center program-status ng-scope"]//span[1]')).getText()
 
 		programInfo.setAssignStatus(assignStatus)
 
-		String teamName = driver.findElement(By.xpath('//div[@ng-click = "viewProgram(item)"]['+ index +']/div[@class="items text-center program-status ng-scope"]//div')).getText()
+		//Set Program Team Name
 
-		if (teamName.empty == false){
+		if (driver.findElements(By.xpath('//div[@ng-click = "viewProgram(item)"]['+ index +']/div[@class="items text-center program-status ng-scope"]//div')).size() > 0){
+
+			String teamName = driver.findElement(By.xpath('//div[@ng-click = "viewProgram(item)"]['+ index +']/div[@class="items text-center program-status ng-scope"]//div')).getText()
 
 			programInfo.setTeamName(teamName)
+		}
+
+		//Set Program Member Numbers
+
+		if (driver.findElements(By.xpath('//div[@ng-click = "viewProgram(item)"]['+ index +']//div[@class="user-assigned ng-scope"]/span')).size() > 0){
+
+			String memberNumber = driver.findElement(By.xpath('//div[@ng-click = "viewProgram(item)"]['+ index +']//div[@class="user-assigned ng-scope"]/span')).getText()
+
+			programInfo.setMemberNumbers(Integer.parseInt(memberNumber))
+
 		}
 
 		return programInfo
@@ -465,7 +495,7 @@ public class program {
 
 		return pr1
 	}
-
+	
 	@Keyword
 	def filterProgramsByCreator(String filterByCreator){
 
@@ -556,4 +586,5 @@ public class program {
 			}
 		}
 	}
+
 }

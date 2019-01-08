@@ -4,8 +4,10 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import java.text.DateFormat as DateFormat
 import java.text.SimpleDateFormat as SimpleDateFormat
-import com.bridgeathletic.eventInfo as eventInfo
-import com.bridgeathletic.teamInfo as teamInfo
+
+import bridgeathletic.eventInfo as eventInfo
+import bridgeathletic.teamInfo as teamInfo
+
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords

@@ -63,7 +63,7 @@ public class workout {
 		println 'Workout Name: ' + wk.workoutName
 
 		println 'Workout Note: ' + wk.workoutNote
-		
+
 		println 'Workout Date: ' + wk.workoutDate
 
 		println 'Workout Duration: ' + wk.workoutDuration
@@ -77,31 +77,29 @@ public class workout {
 
 	@Keyword
 	def getSelectedWorkoutInfoInAthleteCalendar (){
-		
+
 		WebUI.verifyElementPresent(findTestObject('Athlete Profile Page/Workout Dialog/dialog_Workout'), 2)
-		
+
 		Object selectWorkout = new workout()
-		
+
 		String workoutNameText = WebUI.getText(findTestObject('Athlete Profile Page/Workout Dialog/text_Workout Name'))
-		
+
 		selectWorkout.setWorkoutName(workoutNameText)
-		
+
 		if (driver.findElements(By.xpath("//md-dialog[@aria-label = 'Workout Dialog']//div[@class = 'workout-note text-left ng-binding']")).size() > 0){
-			
+
 			String workoutNoteText = WebUI.getText(findTestObject('Athlete Profile Page/Workout Dialog/text_Workout Note'))
-			
+
 			selectWorkout.setWorkoutNote(workoutNoteText)
-			
 		}
-		
+
 		String workoutDateText = WebUI.getText(findTestObject('Athlete Profile Page/Workout Dialog/text_Workout Date'))
-		
+
 		selectWorkout.setWorkoutDate(workoutDateText)
-		
+
 		int blockNumbers = driver.findElements(By.xpath("//md-dialog[@aria-label = 'Workout Dialog']//div[contains(@ng-repeat, 'block in workout.data')]")).size()
-		
+
 		selectWorkout.setBlockNumbers(blockNumbers)
-		
 	}
 
 	@Keyword

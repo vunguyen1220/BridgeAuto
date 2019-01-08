@@ -15,9 +15,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.m
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\VuNA\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Doing\\Block Management\\AddBlock-CreateExerciseFromSearch\\20181029_093929\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\VuNA\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Doing\\Assigned Program -- Edits\\Clone Phase, Move Phase\\20190108_153714\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Doing/Block Management/AddBlock-CreateExerciseFromSearch', new TestCaseBinding('Test Cases/Doing/Block Management/AddBlock-CreateExerciseFromSearch',[:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('Test Cases/Doing/Assigned Program -- Edits/Clone Phase, Move Phase', new TestCaseBinding('Test Cases/Doing/Assigned Program -- Edits/Clone Phase, Move Phase',[:]), FailureHandling.STOP_ON_FAILURE , false)
     

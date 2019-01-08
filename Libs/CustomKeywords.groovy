@@ -190,6 +190,16 @@ def static "bridgeathletic.set.getAllSetsInfo"() {
     (new bridgeathletic.set()).getAllSetsInfo()
 }
 
+def static "bridgeathletic.set.getSetInfoInCalendar"(
+    	int blockIndex	
+     , 	int exerciseIndex	
+     , 	int setIndex	) {
+    (new bridgeathletic.set()).getSetInfoInCalendar(
+        	blockIndex
+         , 	exerciseIndex
+         , 	setIndex)
+}
+
 def static "bridgeathletic.set.getSetInfo"(
     	int index	) {
     (new bridgeathletic.set()).getSetInfo(
@@ -433,10 +443,10 @@ def static "bridgeathletic.exercise.getExerciseInfo"() {
 }
 
 def static "bridgeathletic.exercise.getExerciseInfoInCalendar"(
-    	String blockName	
+    	int blockIndex	
      , 	int exerciseIndex	) {
     (new bridgeathletic.exercise()).getExerciseInfoInCalendar(
-        	blockName
+        	blockIndex
          , 	exerciseIndex)
 }
 

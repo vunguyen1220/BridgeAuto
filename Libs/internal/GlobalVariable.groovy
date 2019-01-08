@@ -29,10 +29,17 @@ public class GlobalVariable {
         allVariables.put('default', ['gl_adminEmail' : 'test+assay2@bridgeathletic.com', 'gl_adminPassword' : '23456789'])
         
         String profileName = RunConfiguration.getExecutionProfile()
-        
         def selectedVariables = allVariables[profileName]
-        gl_adminEmail = selectedVariables['gl_adminEmail']
-        gl_adminPassword = selectedVariables['gl_adminPassword']
+		
+		for(object in selectedVariables){
+			String overridingGlobalVariable = RunConfiguration.getOverridingGlobalVariable(object.key)
+			if(overridingGlobalVariable != null){
+				selectedVariables.put(object.key, overridingGlobalVariable)
+			}
+		}
+
+        gl_adminEmail = selectedVariables["gl_adminEmail"]
+        gl_adminPassword = selectedVariables["gl_adminPassword"]
         
     }
 }

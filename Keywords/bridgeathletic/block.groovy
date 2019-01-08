@@ -1,35 +1,16 @@
 package bridgeathletic
 
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
-import com.kms.katalon.core.annotation.Keyword
-import com.kms.katalon.core.checkpoint.Checkpoint
-import com.kms.katalon.core.checkpoint.CheckpointFactory
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords
-import com.kms.katalon.core.model.FailureHandling
-import com.kms.katalon.core.testcase.TestCase
-import com.kms.katalon.core.testcase.TestCaseFactory
-import com.kms.katalon.core.testdata.TestData
-import com.kms.katalon.core.testdata.TestDataFactory
-import com.kms.katalon.core.testobject.ConditionType
-import com.kms.katalon.core.testobject.ObjectRepository
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords
-import com.kms.katalon.core.webui.driver.DriverFactory
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
-
-import internal.GlobalVariable
-
-import MobileBuiltInKeywords as Mobile
-import WSBuiltInKeywords as WS
-import WebUiBuiltInKeywords as WebUI
 
 import org.openqa.selenium.By
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebDriver
+
+import com.kms.katalon.core.annotation.Keyword
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 
 public class block {
@@ -38,17 +19,52 @@ public class block {
 
 	String blockNote
 
+	boolean hasSuperSet
+
 	int exerciseNumbers
 
 	List<exercise> exerciseList = []
 
 	WebDriver driver = DriverFactory.getWebDriver()
-	
+
 	@Keyword
 	def getBlockInfoInCalendar (int blockIndex){
-		
-		
-		
+
+		Object selectBlock = new block()
+
+		String workoutText = '//md-dialog[@aria-label = "Workout Dialog"]//div[contains(@ng-repeat, "block in workout.data")]['+ blockIndex +']'
+
+		String blockNameText = workoutText + '/div[@class="block-name"]/div[@class="text-center"]/strong[@class="ng-binding"]'
+
+		TestObject blockNameObject = new TestObject()
+
+		blockNameObject.addProperty('xpath', ConditionType.EQUALS, blockNameText, true)
+
+		selectBlock.setBlockName(WebUI.getText(blockNameObject))
+
+		String blockNoteText = workoutText + '/div[@class="block-name"]/div[@class="block-note text-left"]/em[@class="ng-binding"]'
+
+		TestObject blockNoteObject = new TestObject()
+
+		blockNoteObject.addProperty('xpath', ConditionType.EQUALS, blockNoteText, true)
+
+		selectBlock.setBlockNote(WebUI.getText(blockNoteObject))
+
+		String blockSuperSetText = workoutText + '/div[@class="block-superset ng-scope"]'
+
+		if (driver.findElements(By.xpath(blockSuperSetText)).size() > 0){
+
+			selectBlock.hasSuperSet = true
+		}
+
+		else{
+
+			selectBlock.hasSuperSet = false
+		}
+
+		String exerciseNumbersText = workoutText + '/div[@class="block-exercise ng-scope"]'
+
+		selectBlock.setExerciseNumbers(driver.findElements(By.xpath(exerciseNumbersText)).size())
 	}
 
 	@Keyword

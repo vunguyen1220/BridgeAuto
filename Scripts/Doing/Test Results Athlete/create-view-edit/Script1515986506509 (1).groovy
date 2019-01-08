@@ -5,8 +5,10 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import org.openqa.selenium.By as By
 import org.openqa.selenium.WebDriver as WebDriver
-import com.bridgeathletic.teamInfo as teamInfo
-import com.bridgeathletic.testResultInfo
+
+import bridgeathletic.teamInfo as teamInfo
+import bridgeathletic.testResultInfo as testResultInfo
+
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords

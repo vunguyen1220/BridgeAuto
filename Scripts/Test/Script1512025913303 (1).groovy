@@ -18,16 +18,18 @@ import org.openqa.selenium.By as By
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
-import com.bridgeathletic.attendanceInfo as attendanceInfo
-import com.bridgeathletic.blockInfo as blockInfo
-import com.bridgeathletic.eventInfo as eventInfo
-import com.bridgeathletic.phase
-import com.bridgeathletic.program
-import com.bridgeathletic.exercise
-import com.bridgeathletic.testResultInfo
-import com.bridgeathletic.user
-import com.bridgeathletic.workout
-import com.bridgeathletic.workoutInfo as workoutInfo
+
+import bridgeathletic.attendanceInfo as attendanceInfo
+import bridgeathletic.blockInfo as blockInfo
+import bridgeathletic.eventInfo as eventInfo
+import bridgeathletic.phase as phase
+import bridgeathletic.program as program
+import bridgeathletic.exercise as exercise
+import bridgeathletic.testResultInfo as testResultInfo
+import bridgeathletic.user as user
+import bridgeathletic.workout as workout
+import bridgeathletic.workoutInfo as workoutInfo
+
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
@@ -50,14 +52,26 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.switchToWindowIndex(0)
+WebUI.switchToWindowIndex(1)
 
-List<Integer> testList = []
+TestObject testObj = new TestObject()
 
-testList = CustomKeywords.'bridgeathletic.convert.convertFromDateStringToDateList'('sep 1, 2018', 'MMM dd, yyyy')
+testObj.addProperty('xpath', ConditionType.EQUALS, '//md-dialog[@aria-label = "Workout Dialog"]//div[contains(@ng-repeat, "block in workout.data")][10]/div[@class="block-exercise ng-scope"][2]/div[@ng-repeat="blockSet in exercise.orderSets track by $index"][1]', true)
 
-println testList
+String test = WebUI.getText(testObj)
 
-WebUI.callTestCase(findTestCase('Done/Commons/Select Date In Calendar/Athlete Calendar/Select Date In Athlete Calendar'), [var_day:testList[0], var_month:testList[1], var_year:testList[2]])
+List<String> testList = test.split('\n')
 
+List<Integer> resultList = []
 
+for (int i = 0; i < testList.size(); i = i + 1){
+	
+	if (testList[i].contains(':')){
+		
+		
+		
+	}
+	
+}
+
+println testList[2]

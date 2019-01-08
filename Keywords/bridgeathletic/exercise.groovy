@@ -1,37 +1,18 @@
 package bridgeathletic
 
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import java.util.List
-
 import org.openqa.selenium.By
+import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebDriver
 
 import com.kms.katalon.core.annotation.Keyword
-import com.kms.katalon.core.checkpoint.Checkpoint
-import com.kms.katalon.core.checkpoint.CheckpointFactory
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords
 import com.kms.katalon.core.model.FailureHandling
-import com.kms.katalon.core.testcase.TestCase
-import com.kms.katalon.core.testcase.TestCaseFactory
-import com.kms.katalon.core.testdata.TestData
-import com.kms.katalon.core.testdata.TestDataFactory
 import com.kms.katalon.core.testobject.ConditionType
-import com.kms.katalon.core.testobject.ObjectRepository
 import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords
 import com.kms.katalon.core.webui.driver.DriverFactory
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
-
-import internal.GlobalVariable
-
-import MobileBuiltInKeywords as Mobile
-import WSBuiltInKeywords as WS
-import WebUiBuiltInKeywords as WebUI
-import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 public class exercise {
 
@@ -68,12 +49,39 @@ public class exercise {
 
 		return exerciseInfo
 	}
-	
+
 	@Keyword
-	def getExerciseInfoInCalendar (String blockName, int exerciseIndex){
-		
-		
-		
+	def getExerciseInfoInCalendar (int blockIndex, int exerciseIndex){
+
+		Object selectExercise = new exercise()
+
+		String exerciseText = '//md-dialog[@aria-label = "Workout Dialog"]//div[contains(@ng-repeat, "block in workout.data")]['+ blockIndex +']/div[@class="block-exercise ng-scope"]['+ exerciseIndex +']'
+
+		String exerciseNameText = exerciseText + '/div[@class="exercise-name"]/span[@class="ng-binding"]'
+
+		TestObject exerciseNameObject = new TestObject('Exercise Name')
+
+		exerciseNameObject.addProperty('xpath', ConditionType.EQUALS, exerciseNameText, true)
+
+		selectExercise.setExerciseName(WebUI.getText(exerciseNameObject))
+
+		String exerciseNoteText = exerciseText + '/div[@class="exercise-desc ng-binding"]'
+
+		if (driver.findElements(By.xpath(exerciseNoteText)).size() > 0){
+
+			TestObject exerciseNoteObject = new TestObject()
+
+			exerciseNoteObject.addProperty('xpath', ConditionType.EQUALS, exerciseNoteText, true)
+
+			selectExercise.setExerciseNote(WebUI.getText(exerciseNoteObject))
+		}
+
+		int blocksetNumbers = driver.findElements(By.xpath(exerciseText + '/div[@ng-repeat="blockSet in exercise.orderSets track by $index"]')).size()
+
+		for (int i = 1; i <= blocksetNumbers; i = i + 1){
+
+			String blockSetText = exerciseText + '/div[@ng-repeat="blockSet in exercise.orderSets track by $index"]['+ i +']'
+		}
 	}
 
 	@Keyword
@@ -96,6 +104,8 @@ public class exercise {
 		WebUI.sendKeys(findTestObject('Phase Builder Page/Choose Exercise Popup/input_Search For Exercise'), Keys.chord(Keys.ENTER))
 
 		WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
+
+		WebUI.waitForElementNotPresent(findTestObject('Phase Builder Page/Choose Exercise Popup/icon_Loading'), 30)
 
 		TestObject selectExcerciseObject = new TestObject()
 
@@ -123,7 +133,7 @@ public class exercise {
 	@Keyword
 	def selectExerciseFromName (String blockName, String exerciseName){
 
-		String exerciseNameText = '//header[@class = "block-name draggable"]/span[. = "'+ blockName +'"]//ancestor::div[contains(@class, "block ng-scope")]//header[@class = "exercise ng-scope"]//span[. = "'+ exerciseName +'"]'
+		String exerciseNameText = '//header[@class = "block-name draggable"]/span[. = "'+ blockName +'"]//ancestor::div[contains(@class, "block ng-scope")]//header[contains(@class, "exercise ng-scope")]//span[. = "'+ exerciseName +'"]'
 
 		TestObject exerciseNameObject = new TestObject()
 

@@ -5,11 +5,11 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.concurrent.ThreadLocalRandom as ThreadLocalRandom
 
-import bridgeathletic.block
-import bridgeathletic.exercise
-import bridgeathletic.program
-import bridgeathletic.workout
-import bridgeathletic.phase
+import bridgeathletic.block as block
+import bridgeathletic.exercise as exercise
+import bridgeathletic.program as program
+import bridgeathletic.workout as workout
+import bridgeathletic.phase as phase
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords

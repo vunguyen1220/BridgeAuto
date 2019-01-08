@@ -7,9 +7,11 @@ import java.util.concurrent.ThreadLocalRandom as ThreadLocalRandom
 import org.junit.After as After
 import org.openqa.selenium.By as By
 import org.openqa.selenium.WebDriver as WebDriver
-import com.bridgeathletic.blockInfo as blockInfo
-import com.bridgeathletic.phaseInfo as phaseInfo
-import com.bridgeathletic.workoutInfo as workoutInfo
+
+import bridgeathletic.blockInfo as blockInfo
+import bridgeathletic.phaseInfo as phaseInfo
+import bridgeathletic.workoutInfo as workoutInfo
+
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
 import com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword as CallTestCaseKeyword
