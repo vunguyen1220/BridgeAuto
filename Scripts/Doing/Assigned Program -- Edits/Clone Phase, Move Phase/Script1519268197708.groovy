@@ -40,7 +40,7 @@ while (flag == false){
 		
 	}
 	
-	tmp ++
+	tmp = tmp + 1
 	
 }
 
