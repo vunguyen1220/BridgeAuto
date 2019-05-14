@@ -14,7 +14,7 @@ WebUI.callTestCase(findTestCase('Done/Commons/Login'), [var_email:GlobalVariable
 'Navigate to a random organization (org 2)'
 WebUI.callTestCase(findTestCase('Done/Commons/Select Organization'), [var_orgNumber:2])
 
-WebUI.click(findTestObject('Org Home Page/span_LIBRARY'))
+WebUI.click(findTestObject('Org Home Page/header_Library'))
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
@@ -44,57 +44,11 @@ while (flag == false){
 	
 }
 
+WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
+selectedProgramInfo = CustomKeywords.'bridgeathletic.program.getAssignedProgramInfoInDetail'()
 
-//while (memberNumbers < 20 || flag == false) {
-//	
-//	flag = true
-//	
-//	Object tmpProgramInfoInList = new program()
-//	
-//	tmpProgramInfoInList = CustomKeywords.'bridgeathletic.program.getProgramInfoInLibrary'(tmp)
-//	
-//	TestObject programSelectObject = new TestObject()
-//	
-//	programSelectObject.addProperty('xpath', ConditionType.EQUALS, '//div[@ng-click="viewProgram(item)"]['+ tmp +']', true)
-//	
-//	WebUI.click(programSelectObject)
-//	
-//	WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
-//	
-//	Object tmpAssignedProgramInfo = new program()
-//	
-//	tmpAssignedProgramInfo = CustomKeywords.'bridgeathletic.program.getAssignedProgramInfoInDetail'()
-//	
-//	if (tmpAssignedProgramInfo.memberNumbers > 20){
-//		
-//		for (int i = 1; i <= tmpAssignedProgramInfo.phaseNumbers; i = i + 1){
-//			
-//			tmpAssignedProgramInfo.phaseList.add(CustomKeywords.'bridgeathletic.phase.getPhaseInfoInDetail'(i))
-//			
-//		}
-//		
-//	}
-//	
-//	selectedProgramInfo = CustomKeywords.'bridgeathletic.program.updateProgramInfo'(tmpAssignedProgramInfo, tmpProgramInfoInList)
-//	
-//	WebUI.click(findTestObject('Breadcrumbs/button_Programs'))
-//	
-//	WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
-//	
-//	if (selectedProgramInfo.currentPhase == null){
-//		
-//		flag = false
-//		
-//	}
-//	
-//	memberNumbers = selectedProgramInfo.memberNumbers
-//	
-//	tmp = tmp + 1
-//	
-//}
-//
-//CustomKeywords.'bridgeathletic.program.printProgramInfo'(selectedProgramInfo)
+WebUI.callTestCase(findTestCase('Done/Commons/Navigate To Team'), [var_teamName:selectedProgramInfo.teamName])
 
 //WebUI.click(findTestObject('Breadcrumbs/button_Home'))
 //

@@ -48,7 +48,7 @@ WebUI.click(findTestObject('Template Blocks/Builder-Add Template Block/a_Organiz
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
 'Find a coach in that organization and record their userId (if no coaches in org, repeat step 1)'
-String Coach = WebUI.callTestCase(findTestCase('Done/Commons/GetCoachEmail'), [:], FailureHandling.STOP_ON_FAILURE)
+String Coach = WebUI.callTestCase(findTestCase('Done/Commons/Get Coach Email From Team'), [:], FailureHandling.STOP_ON_FAILURE)
 
 System.out.println(Coach)
 

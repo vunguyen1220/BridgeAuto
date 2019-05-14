@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Navigate To Team</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d43c5a32-1503-4397-a411-18d407c79f9c</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>30a91c0d-7c85-4f7a-8b61-e87713ab6e42</id>
+      <masked>false</masked>
+      <name>var_teamName</name>
+   </variable>
+</TestCaseEntity>

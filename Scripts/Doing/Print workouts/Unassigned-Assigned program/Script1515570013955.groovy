@@ -35,7 +35,7 @@ WebUI.click(findTestObject('Header/a_Organization-19'))
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
 'Find a coach in that organization and record their userId (if no coaches in org, repeat step 1)'
-GlobalVariable.Coach_Username = WebUI.callTestCase(findTestCase('Done/Commons/GetCoachEmail'), [:], FailureHandling.STOP_ON_FAILURE)
+GlobalVariable.Coach_Username = WebUI.callTestCase(findTestCase('Done/Commons/Get Coach Email From Team'), [:], FailureHandling.STOP_ON_FAILURE)
 
 System.out.println('Coach Email: ' + GlobalVariable.Coach_Username)
 

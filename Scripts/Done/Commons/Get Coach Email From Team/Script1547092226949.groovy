@@ -19,31 +19,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Commons/span_MEMBERS'))
+WebUI.click(findTestObject('Team Home Page/Roster Module/button_See All'))
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-WebUI.click(findTestObject('Commons/span_coaches'))
-
-WebUI.waitForElementPresent(findTestObject('Commons/span_coaches-highlight'), 30, FailureHandling.STOP_ON_FAILURE)
-
-String coachEmail
-
-WebUI.click(findTestObject('Commons/div_member'))
-
-WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
-
-if (WebUI.verifyElementPresent(findTestObject('Commons/div_coach-email-membership'), 2, FailureHandling.OPTIONAL)){
+if (WebUI.getText(findTestObject('Team Home Page/Roster Page/button_Filter Roles')) != 'Coaches'){
 	
-	coachEmail = WebUI.getText(findTestObject('Commons/div_coach-email-membership'))
+	WebUI.click(findTestObject('Team Home Page/Roster Page/button_Filter Roles'))
 	
 }
-
-else {
-	
-	coachEmail = WebUI.getText(findTestObject('Commons/div_coach email'))
-	
-}
-
-return coachEmail
-

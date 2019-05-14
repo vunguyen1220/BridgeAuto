@@ -36,7 +36,7 @@ WebUI.click(findTestObject('Assigned Program Edits - Short Flows/Assign and Edit
 
 WebUI.callTestCase(findTestCase('Done/Commons/Waiting'), [:])
 
-String Coach = WebUI.callTestCase(findTestCase('Done/Commons/GetCoachEmail'), [:], FailureHandling.STOP_ON_FAILURE)
+String Coach = WebUI.callTestCase(findTestCase('Done/Commons/Get Coach Email From Team'), [:], FailureHandling.STOP_ON_FAILURE)
 
 System.out.println('Coach Email: ' + Coach)
 
