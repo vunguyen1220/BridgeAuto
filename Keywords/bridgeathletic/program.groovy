@@ -304,7 +304,7 @@ public class program {
 	def getAssignedProgramInfoInDetail(){
 
 		Object programInfo = new program()
-		
+
 		//Set Program Name
 
 		WebElement element = driver.findElement(By.xpath('id("program-detail")//h1[@class="program-name"]'))
@@ -314,7 +314,7 @@ public class program {
 		String programName = driver.findElement(By.xpath('id("program-detail")//h1[@class="program-name"]')).getText()
 
 		programInfo.setProgramName(programName)
-		
+
 		//Set Program Description
 
 		if (driver.findElements(By.xpath('id("program-detail")//p[@class="program-description program-assigned-description"]/span[@id="check-readmore"]')).size() > 0){
@@ -325,7 +325,7 @@ public class program {
 		}
 
 		//Set Program Team Name
-		
+
 		element = driver.findElement(By.xpath('id("program-detail")//div[@ng-click="goTeam(team)"]'))
 
 		((JavascriptExecutor)driver).executeScript("arguments[0].style='text-transform: unset;'", element)
@@ -333,7 +333,7 @@ public class program {
 		String teamName = driver.findElement(By.xpath('id("program-detail")//div[@ng-click="goTeam(team)"]')).getText()
 
 		programInfo.setTeamName(teamName)
-		
+
 		//Set Program Folder
 
 		if (driver.findElements(By.xpath('id("program-detail")//p[@class="edited-name ng-scope"]')).size() > 0){
@@ -342,7 +342,7 @@ public class program {
 
 			programInfo.setFolderName(folderName)
 		}
-		
+
 		//Set Program Member Numbers
 
 		int athleteNumbers = Integer.parseInt((driver.findElement(By.xpath('(id("program-detail")//div[@class="user-list"]//h4)[1]')).getText().replace('(', '').replace(')', '').split(' '))[1])
@@ -350,7 +350,7 @@ public class program {
 		int coachNumbers = Integer.parseInt((driver.findElement(By.xpath('(id("program-detail")//div[@class="user-list"]//h4)[2]')).getText().replace('(', '').replace(')', '').split(' '))[1])
 
 		programInfo.setMemberNumbers(athleteNumbers + coachNumbers)
-		
+
 		//Set Program Member List
 
 		if (programInfo.memberNumbers > 0){
@@ -371,11 +371,11 @@ public class program {
 				programInfo.memberList.add(userName)
 			}
 		}
-		
+
 		//Set Program Assign Status
 
 		programInfo.setAssignStatus('Assigned')
-		
+
 		//Set Program Edited By & Date
 
 		List<String> editedList = driver.findElement(By.xpath('id("program-detail")//p[@class="edited-date ng-binding"][2]')).getText().replace(')', '').split(' \\(')
@@ -383,7 +383,7 @@ public class program {
 		programInfo.setEditedBy(editedList[0])
 
 		programInfo.setEditedDate(editedList[1])
-		
+
 		//Set Program Start Date & End Date
 
 		List<String> durationList = driver.findElement(By.xpath('id("program-detail")//p[@class="edited-date ng-binding"][1]')).getText().split(' - ')
@@ -391,7 +391,7 @@ public class program {
 		programInfo.setStartDate(durationList[0])
 
 		programInfo.setEndDate(durationList[1])
-		
+
 		//Set Program Current Phase
 
 		if (driver.findElements(By.xpath('id("program-detail")//p[@ng-if="currentPhase"][2]')).size() > 0){
@@ -402,17 +402,17 @@ public class program {
 		}
 
 		//Set Program Phase Numbers
-		
+
 		List<String> textPhase = driver.findElement(By.xpath('id("phase-in-program")/h2')).getText().split(" \n")
 
 		int phaseNumbers = Integer.parseInt(textPhase[0])
 
 		programInfo.setPhaseNumbers(phaseNumbers)
-		
+
 		//Set Program Phase List
-		
+
 		List<phase> phaseList = (new bridgeathletic.phase()).getPhaseList(phaseNumbers)
-		
+
 		programInfo.setPhaseList(phaseList)
 
 		return programInfo
